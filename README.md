@@ -149,11 +149,11 @@ The website is fully responsive and optimized for:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 📞 Contact
+<!-- ## 📞 Contact
 
 - **Email**: info@thinkindia.org
-- **Phone**: +91 98765 43210
-- **Website**: [Think India](https://thinkindia.org)
+- **Phone**: +91 98765 43210 -->
+<!-- - **Website**: [Think India](https://thinkindia.org) -->
 
 ## 🙏 Acknowledgments
 
