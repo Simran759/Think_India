@@ -1,0 +1,228 @@
+/* Work Hero Section */
+.work-hero {
+  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
+  padding: 120px 0 80px;
+  text-align: center;
+  color: var(--white);
+}
+
+.work-hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.work-hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Activities Section */
+.activities-section {
+  background: var(--light-gray);
+}
+
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.activity-card {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border-left: 4px solid var(--primary-orange);
+}
+
+.activity-card:hover {
+  transform: translateY(-10px);
+}
+
+.activity-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: var(--white);
+}
+
+.activity-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary-orange);
+  margin-bottom: 1rem;
+}
+
+.activity-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.activity-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.activity-card li {
+  padding: 0.5rem 0;
+  color: var(--text-light);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.activity-card li::before {
+  content: '•';
+  color: var(--accent-yellow);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Collaborations Section */
+.collaborations-section {
+  background: var(--white);
+}
+
+.collaborations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.collaboration-category {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.collaboration-category:hover {
+  transform: translateY(-5px);
+}
+
+.collaboration-category h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary-orange);
+  margin-bottom: 1.5rem;
+}
+
+.partner-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.partner-item {
+  padding: 0.8rem;
+  background: var(--light-gray);
+  border-radius: 8px;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.partner-item:hover {
+  background: var(--accent-yellow);
+  color: var(--dark-gray);
+}
+
+/* Impact Section */
+.impact-section {
+  background: var(--light-gray);
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.impact-card {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.impact-card:hover {
+  transform: translateY(-10px);
+}
+
+.impact-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-orange);
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.impact-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.impact-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .work-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .activities-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .collaborations-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .work-hero-content p {
+    font-size: 1rem;
+  }
+  
+  .activity-card,
+  .collaboration-category,
+  .impact-card {
+    padding: 1.5rem;
+  }
+  
+  .impact-number {
+    font-size: 2.5rem;
+  }
+} 
