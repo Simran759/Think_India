@@ -1,3 +1,34 @@
+.btn-highlight {
+  background: linear-gradient(135deg, #FFD93D, #FF8D21);
+  color: #232323;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: 18px 38px;
+  border-radius: 50px;
+  box-shadow: 0 8px 32px rgba(255, 141, 33, 0.18);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  animation: youthfest-pop 1.2s cubic-bezier(.68,-0.55,.27,1.55) 1;
+}
+
+.btn-highlight:hover, .btn-highlight:focus {
+  background: linear-gradient(135deg, #FF8D21, #FFD93D);
+  color: #232323;
+  box-shadow: 0 12px 36px rgba(255, 141, 33, 0.28);
+  transform: scale(1.05);
+}
+
+@keyframes youthfest-pop {
+  0% { transform: scale(0.7); opacity: 0; }
+  60% { transform: scale(1.15); opacity: 1; }
+  100% { transform: scale(1); }
+}
 /* Hero Section */
 .hero {
   position: relative;

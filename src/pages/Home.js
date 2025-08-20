@@ -31,8 +31,7 @@ const Home = () => {
               Empowering students to think, innovate, and lead. Building a brighter future for India through education, collaboration, and community service.
             </p>
             <div className="hero-buttons">
-              <a href="#about" className="btn btn-primary">Learn More</a>
-              <a href="#contact" className="btn btn-secondary">Join Us</a>
+              <a href="/youthfest" className="btn btn-highlight">🎉 Explore YouthFest</a>
             </div>
           </motion.div>
         </div>
@@ -41,7 +40,32 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Us Section */}
+      {/* About MNIT Jaipur Section */}
+      <section id="about-mnit" className="section about-section">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="section-title">About MNIT Jaipur</h2>
+            <div className="about-grid">
+              <div className="about-card">
+                <div className="about-icon" style={{background: 'linear-gradient(135deg, #3f51b5, #2196f3)'}}>
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7v2c0 5.25 3.75 10.74 10 13 6.25-2.26 10-7.75 10-13V7l-10-5z" fill="#fff"/>
+                  </svg>
+                </div>
+                <h3>Malaviya National Institute of Technology (MNIT) Jaipur</h3>
+                <p>MNIT Jaipur is one of India's premier engineering institutions, known for its academic excellence, vibrant campus life, and commitment to innovation and research. MNIT provides a nurturing environment for students to grow, collaborate, and lead in various fields.</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* About Think India Section */}
       <section id="about" className="section about-section">
         <div className="container">
           <motion.div
@@ -50,7 +74,7 @@ const Home = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-title">About Us</h2>
+            <h2 className="section-title">About Think India</h2>
             <p className="section-subtitle">
               Think India is a student-driven organization dedicated to fostering leadership, innovation, and social responsibility among young minds.
             </p>

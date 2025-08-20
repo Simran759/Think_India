@@ -8,6 +8,7 @@ import Events from './pages/Events';
 import Team from './pages/Team';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
+import Youthfest from './pages/Youthfest';
 import './App.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/team" element={<Team />} />
             <Route path="/work" element={<Work />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/youthfest" element={<Youthfest />} />
           </Routes>
         </main>
         <Footer />
