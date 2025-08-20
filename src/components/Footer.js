@@ -55,14 +55,14 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="footer-section">
+          {/* <div className="footer-section">
             <h4>Newsletter</h4>
             <p>Stay updated with our latest events and activities.</p>
             <div className="newsletter-form">
               <input type="email" placeholder="Enter your email" />
               <button type="submit" className="btn btn-primary">Subscribe</button>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="footer-bottom">

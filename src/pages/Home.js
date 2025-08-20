@@ -25,7 +25,7 @@ const Home = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="hero-title">
-              Welcome to <span className="highlight">Think India</span>
+              Welcome to <span className="highlight">Think India MNIT</span>
             </h1>
             <p className="hero-subtitle">
               Empowering students to think, innovate, and lead. Building a brighter future for India through education, collaboration, and community service.
