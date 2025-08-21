@@ -37,15 +37,32 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <div className="container">
+      <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
         <Link to="/" className="navbar-brand" onClick={closeMenu}>
-          <div className="logo">
+          <div className="logo" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <span style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: '44px',
+              width: '44px',
+              borderRadius: '50%',
+              overflow: 'hidden',
+              background: '#fff',
+              boxShadow: '0 2px 12px 2px rgba(0,0,0,0.18)',
+              border: '3px solid #1976d2',
+              marginRight: '6px',
+              outline: '2px solid #fff',
+              outlineOffset: '-2px'
+            }}>
+              <img src="/logoti.jpg" alt="Think India Logo" style={{ height: '40px', width: '40px', objectFit: 'cover', borderRadius: '50%', background: '#fff' }} />
+            </span>
             <span className="logo-text">Think India</span>
             <div className="logo-accent"></div>
           </div>
         </Link>
 
-        <div className={`navbar-menu ${isOpen ? 'active' : ''}`}>
+        <div className={`navbar-menu ${isOpen ? 'active' : ''}`} style={{ marginLeft: 'auto' }}>
           {navLinks.map((link) => (
             <Link
               key={link.path}
