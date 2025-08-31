@@ -551,8 +551,7 @@
     grid-template-columns: 1fr;
   }
 
-  /* Ensure icons are visible on mobile */
-  .about-icon,
+  /* .about-icon,
   .events-icon,
   .contact-icon,
   .social-link {
@@ -560,9 +559,14 @@
     fill: #fff !important;
     opacity: 1 !important;
     z-index: 2;
-  }
+  } */
   /* If you want orange icons instead, use the line below instead of #fff */
   /* color: #FF8D21 !important; */
+}
+.about-icon svg, 
+.about-icon i {
+  color: #fff;
+  font-size: 2rem;
 }
 
 @media (max-width: 480px) {
