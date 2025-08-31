@@ -51,7 +51,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start' }}>
-        <Link to="/" className="navbar-brand" onClick={closeMenu}>
+  <Link to="/" className="navbar-brand" onClick={() => { closeMenu(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
           <div className="logo" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <span style={{
               display: 'inline-flex',
@@ -88,8 +88,8 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className="navbar-toggle" onClick={toggleMenu}>
-          {isOpen ? <FaTimes /> : <FaBars />}
+        <div className="navbar-toggle" onClick={toggleMenu} style={{ color: '#FFD93D', zIndex: 2100, background: 'none', border: 'none', padding: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          {isOpen ? <FaTimes size={28} color="#FFD93D" /> : <FaBars size={28} color="#FFD93D" />}
         </div>
       </div>
     </nav>
