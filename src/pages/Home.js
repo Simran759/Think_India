@@ -11,7 +11,7 @@ const Home = () => {
   };
 
   return (
-    <div className="home">
+  <div className="home"  style={{ background: 'linear-gradient(135deg, #0a0a1f 60%, #232a36 100%)', color: '#fff', minHeight: '100vh' }}>
       {/* Welcome Section */}
       <section className="hero">
         <div className="hero-background">
@@ -25,7 +25,7 @@ const Home = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="hero-title">
-              Welcome to <span className="highlight">Think India MNIT</span>
+              Think India MNIT Jaipur
             </h1>
             <p className="hero-subtitle">
               Empowering students to think, innovate, and lead. Building a brighter future for India through education, collaboration, and community service.
@@ -141,64 +141,54 @@ const Home = () => {
             </p>
           </motion.div>
 
-          <div className="events-grid">
-            <motion.div 
-              className="events-card upcoming"
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-            >
-              <div className="events-header">
-                <FaCalendarAlt className="events-icon" />
-                <h3>Upcoming Events</h3>
-              </div>
-              <div className="events-content">
-                <div className="event-item">
-                  <h4>Leadership Summit 2024</h4>
-                  <p>Date: March 15-17, 2024</p>
-                  <p>Location: Main Campus Auditorium</p>
+          {/* Centered Timeline Layout: Upcoming left, Previous right */}
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', marginTop: 40, position: 'relative', minHeight: 400 }}>
+            {/* Upcoming Events (Left) */}
+            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 32 }}>
+              <div style={{ fontWeight: 700, fontSize: '1.2rem', color: '#1976d2', marginBottom: 16, alignSelf: 'flex-end' }}>Upcoming Events</div>
+              {/* Leadership Summit 2024 */}
+              <motion.div className="timeline-event" initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.1 }} viewport={{ once: true }} style={{ width: 300, background: '#f7faff', borderRadius: 18, boxShadow: '0 2px 12px rgba(0,0,0,0.07)', padding: 20, marginBottom: 0, position: 'relative' }}>
+                <div style={{ color: '#1976d2', fontWeight: 700, fontSize: '1.1rem', marginBottom: 6 }}>Leadership Summit 2024</div>
+                <div style={{ color: '#444', fontSize: '0.98rem', marginBottom: 4 }}>15-17 March 2024, Main Campus Auditorium</div>
+                <div style={{ color: '#555', fontSize: '0.97rem', marginBottom: 8 }}>A three-day summit for leadership development, workshops, and networking.</div>
+                <a href="#contact" className="btn btn-primary" style={{ width: '100%' }}>Register Now</a>
+              </motion.div>
+              {/* Innovation Workshop */}
+              <motion.div className="timeline-event" initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.2 }} viewport={{ once: true }} style={{ width: 300, background: '#f7faff', borderRadius: 18, boxShadow: '0 2px 12px rgba(0,0,0,0.07)', padding: 20, marginBottom: 0, position: 'relative' }}>
+                <div style={{ color: '#1976d2', fontWeight: 700, fontSize: '1.1rem', marginBottom: 6 }}>Innovation Workshop</div>
+                <div style={{ color: '#444', fontSize: '0.98rem', marginBottom: 4 }}>25 March 2024, Innovation Lab</div>
+                <div style={{ color: '#555', fontSize: '0.97rem', marginBottom: 8 }}>Hands-on workshop on design thinking and innovation for real-world problems.</div>
+                <a href="#contact" className="btn btn-primary" style={{ width: '100%' }}>Register Now</a>
+              </motion.div>
+            </div>
+            {/* Center Line */}
+            <div style={{ width: 4, background: '#1976d2', height: '100%', minHeight: 340, margin: '0 32px', borderRadius: 2 }}></div>
+            {/* Previous Events (Right) */}
+            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 32 }}>
+              <div style={{ fontWeight: 700, fontSize: '1.2rem', color: '#fbc02d', marginBottom: 16, alignSelf: 'flex-start' }}>Past Events</div>
+              {/* Ganesh Chaturthi 2025 */}
+              <motion.div className="timeline-event" initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.3 }} viewport={{ once: true }} style={{ width: 300, background: '#fff', borderRadius: 18, boxShadow: '0 2px 12px rgba(0,0,0,0.07)', padding: 20, marginBottom: 0, position: 'relative' }}>
+                <div style={{ color: '#fbc02d', fontWeight: 700, fontSize: '1.1rem', marginBottom: 6 }}>Ganesh Chaturthi 2025</div>
+                <div style={{ color: '#444', fontSize: '0.98rem', marginBottom: 4 }}>26-27 August 2025, OAT, MNIT Jaipur</div>
+                <img src="/events/Ganesh_Chaturthi.JPG" alt="Ganesh Chaturthi 2025" style={{ width: '100%', maxHeight: '120px', objectFit: 'cover', borderRadius: 8, margin: '10px 0' }} />
+                <div style={{ color: '#555', fontSize: '0.97rem' }}>Students celebrated Ganesh Chaturthi with rituals, music, and cultural performances, fostering unity and devotion on campus.</div>
+              </motion.div>
+              {/* Youthfest 2023 */}
+              <motion.div className="timeline-event" initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.4 }} viewport={{ once: true }} style={{ width: 300, background: '#fff', borderRadius: 18, boxShadow: '0 2px 12px rgba(0,0,0,0.07)', padding: 20, marginBottom: 0, position: 'relative' }}>
+                <div style={{ color: '#fbc02d', fontWeight: 700, fontSize: '1.1rem', marginBottom: 6 }}>Youthfest 2023</div>
+                <div style={{ color: '#444', fontSize: '0.98rem', marginBottom: 4 }}>12-15 January 2023, MNIT Jaipur</div>
+                <img src="/events/youthfest.png" alt="Youthfest 2023" style={{ width: '100%', maxHeight: '120px', objectFit: 'cover', borderRadius: 8, margin: '10px 0' }} />
+                <div style={{ color: '#555', fontSize: '0.97rem', marginBottom: '10px' }}>Youthfest 2023 at MNIT Jaipur was a four-day festival featuring Lohri Night, Makar Sankranti, Vivekananda Jayanti, and traditional childhood games. The event brought students together for cultural celebrations, inspiring talks, and fun activities, creating lasting memories and fostering unity on campus.</div>
+                <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                  <a href="/youthfest" className="btn btn-primary" style={{ marginTop: '6px' }}>See More Youthfest Highlights</a>
                 </div>
-                <div className="event-item">
-                  <h4>Innovation Workshop</h4>
-                  <p>Date: March 25, 2024</p>
-                  <p>Location: Innovation Lab</p>
-                </div>
-                <a href="#contact" className="btn btn-primary">Register Now</a>
-              </div>
-            </motion.div>
-
-            <motion.div 
-              className="events-card past"
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <div className="events-header">
-                <FaTrophy className="events-icon" />
-                <h3>Past Events</h3>
-              </div>
-              <div className="events-content">
-                <div className="event-item">
-                  <h4>Tech Fest 2023</h4>
-                  <p>Successfully organized with 500+ participants</p>
-                  <div className="event-photos">
-                    <div className="photo-placeholder"></div>
-                    <div className="photo-placeholder"></div>
-                  </div>
-                </div>
-                <div className="event-item">
-                  <h4>Community Service Day</h4>
-                  <p>Impacted 1000+ lives through various initiatives</p>
-                </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Team Section
       <section id="team" className="section team-section">
         <div className="container">
           <motion.div
@@ -296,7 +286,7 @@ const Home = () => {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Work Section */}
       <section id="work" className="section work-section">
@@ -368,7 +358,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Contact Section
       <section id="contact" className="section contact-section">
         <div className="container">
           <motion.div
@@ -440,7 +430,7 @@ const Home = () => {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

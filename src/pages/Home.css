@@ -1,3 +1,4 @@
+
 .btn-highlight {
   background: linear-gradient(135deg, #FFD93D, #FF8D21);
   color: #232323;
@@ -61,6 +62,7 @@
   z-index: 1;
 }
 
+
 .hero-content {
   position: relative;
   z-index: 2;
@@ -78,7 +80,7 @@
 }
 
 .highlight {
-  background: linear-gradient(135deg, var(--accent-yellow), var(--light-yellow));
+  background: linear-gradient(135deg, rgb(56, 144, 215));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -140,9 +142,9 @@
 }
 
 /* About Section */
-.about-section {
+/* .about-section {
   background: var(--light-gray);
-}
+} */
 
 .about-grid {
   display: grid;
@@ -168,7 +170,7 @@
 .about-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
+  background: linear-gradient(135deg, rgb(56, 144, 215));
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -182,7 +184,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: var(--primary-orange);
+  color: rgb(137, 132, 132);
 }
 
 .about-card p {
@@ -191,9 +193,7 @@
 }
 
 /* Events Section */
-.events-section {
-  background: var(--white);
-}
+
 
 .events-grid {
   display: grid;
@@ -215,7 +215,7 @@
 }
 
 .events-header {
-  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
+  background: linear-gradient(135deg, rgb(56, 144, 215));
   color: var(--white);
   padding: 1.5rem;
   display: flex;
@@ -248,7 +248,7 @@
 }
 
 .event-item h4 {
-  color: var(--primary-orange);
+  color: rgb(5, 131, 235);
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -272,9 +272,9 @@
 }
 
 /* Team Section */
-.team-section {
+/* .team-section {
   background: var(--light-gray);
-}
+} */
 
 .team-grid {
   display: grid;
@@ -334,9 +334,9 @@
 }
 
 /* Work Section */
-.work-section {
+/* .work-section {
   background: var(--white);
-}
+} */
 
 .work-grid {
   display: grid;
@@ -350,13 +350,13 @@
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border-left: 4px solid var(--primary-orange);
+  border-left: 4px solid rgb(56, 144, 215);
 }
 
 .work-card h3 {
   font-size: 1.3rem;
   font-weight: 600;
-  color: var(--primary-orange);
+  color: rgb(137, 132, 132);
   margin-bottom: 1.5rem;
 }
 
@@ -374,7 +374,7 @@
 
 .work-card li::before {
   content: '•';
-  color: var(--accent-yellow);
+  color: rgb(56, 144, 215);
   font-weight: bold;
   position: absolute;
   left: 0;

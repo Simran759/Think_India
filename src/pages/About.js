@@ -4,22 +4,115 @@ import { FaLightbulb, FaTrophy, FaHandshake, FaUsers, FaChartLine, FaHeart } fro
 import './About.css';
 
 const About = () => {
+   const slideshowImages = [
+      '/photos/iit_kanpur_workshop.png',
+      // '/photos/roorkee.jpg',
+      '/photos/convention.jpg',
+    ];
+    const [slideIndex, setSlideIndex] = React.useState(0);
+    React.useEffect(() => {
+      const interval = setInterval(() => {
+        setSlideIndex((prev) => (prev + 1) % slideshowImages.length);
+      }, 2500);
+      return () => clearInterval(interval);
+    }, [slideshowImages.length]);
   return (
-    <div className="about-page">
+  <div className="about-page" style={{ backgroundColor: '#0a0a1f', color: '#fff', minHeight: '100vh' }}>
+
       {/* Hero Section */}
-      <section className="about-hero">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="about-hero-content"
-          >
-            <h1>About Think India</h1>
-            <p>Empowering the next generation of leaders through innovation, collaboration, and social responsibility.</p>
-          </motion.div>
-        </div>
-      </section>
+  <section style={{ position: "relative", width: "100%", height: "730px", overflow: "hidden" }}>
+    {/* Slide background */}
+    <motion.div
+      key={slideIndex} // important for fade animation
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        backgroundImage: `url(${slideshowImages[slideIndex]})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        filter: "brightness(0.8)",
+      }}
+    />
+  
+    {/* Overlay */}
+    <div
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        background: "linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.8))",
+        zIndex: 1,
+      }}
+    />
+    {/* Hero Text */}
+      <div
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          textAlign: "center",
+          zIndex: 2,
+          color: "#fff",
+          padding: "0 20px",
+          maxWidth: 700,
+        }}
+      >
+        <motion.h4
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          style={{ fontSize: "4rem", fontWeight: 600, marginBottom: 19 }}
+        >
+        About Think India
+        </motion.h4>
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          style={{ fontSize: "1.2rem", color: "#d0d0d0", fontWeight: 500 }}
+        >
+          Empowering the next generation of leaders through innovation, collaboration, and social responsibility.
+        </motion.h2>
+      </div>
+    
+      {/* Dots */}
+      <div
+        style={{
+          position: "absolute",
+          bottom: 20,
+          left: "50%",
+          transform: "translateX(-50%)",
+          display: "flex",
+          gap: 12,
+          zIndex: 2,
+        }}
+      >
+        {slideshowImages.map((_, idx) => (
+          <span
+            key={idx}
+            style={{
+              width: 14,
+              height: 14,
+              borderRadius: "%",
+              background: idx === slideIndex ? "#fbc02d" : "#fff",
+              opacity: idx === slideIndex ? 1 : 0.5,
+              border: idx === slideIndex ? "2px solid #fff" : "2px solid #fbc02d",
+              transition: "all 0.3s",
+            }}
+          />
+        ))}
+      </div>
+    </section>
 
       {/* Mission & Vision Section */}
       <section className="section mission-vision">

@@ -1,9 +1,9 @@
 /* About Hero Section */
 .about-hero {
-  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
+  /* background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange)); */
   padding: 120px 0 80px;
   text-align: center;
-  color: var(--white);
+  /* color: var(--white); */
 }
 
 .about-hero-content h1 {
@@ -22,7 +22,7 @@
 
 /* Mission & Vision Section */
 .mission-vision {
-  background: var(--light-gray);
+  /* background: var(--light-gray); */
 }
 
 .mission-vision-grid {
@@ -44,7 +44,7 @@
 .card-icon {
   width: 100px;
   height: 100px;
-  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
+  background: linear-gradient(135deg, rgb(56, 144, 215));
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -58,7 +58,8 @@
 .vision-card h2 {
   font-size: 2rem;
   font-weight: 600;
-  color: var(--primary-orange);
+  /* color: var(--primary-orange); */
+  color:rgb(137, 132, 132);
   margin-bottom: 1.5rem;
 }
 
@@ -71,7 +72,7 @@
 
 /* Core Values Section */
 .core-values {
-  background: var(--white);
+  /* background: var(--white); */
 }
 
 .values-grid {
@@ -99,20 +100,20 @@
 .value-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, var(--accent-yellow), var(--light-yellow));
+  background: linear-gradient(135deg,rgb(56, 144, 215));
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 1.5rem;
   font-size: 2rem;
-  color: var(--dark-gray);
+  color:white;
 }
 
 .value-card h3 {
   font-size: 1.3rem;
   font-weight: 600;
-  color: var(--primary-orange);
+  color:rgb(137, 132, 132);
   margin-bottom: 1rem;
 }
 
@@ -122,9 +123,9 @@
 }
 
 /* Goals Section */
-.goals-section {
+/* .goals-section {
   background: var(--light-gray);
-}
+} */
 
 .goals-grid {
   display: grid;
@@ -152,7 +153,7 @@
   left: 30px;
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
+  background: linear-gradient(135deg, rgb(56, 144, 215));
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -165,7 +166,7 @@
 .goal-item h3 {
   font-size: 1.3rem;
   font-weight: 600;
-  color: var(--primary-orange);
+  color: rgb(137, 132, 132);
   margin: 1rem 0 1rem 0;
 }
 
@@ -175,9 +176,9 @@
 }
 
 /* History Section */
-.history-section {
+/* .history-section {
   background: var(--white);
-}
+} */
 
 .timeline {
   position: relative;
@@ -193,7 +194,7 @@
   top: 0;
   bottom: 0;
   width: 4px;
-  background: linear-gradient(135deg, var(--primary-orange), var(--accent-yellow));
+  background: linear-gradient(135deg,rgb(56, 144, 215));
   transform: translateX(-50%);
 }
 
@@ -246,7 +247,7 @@
 
 .timeline-year {
   display: inline-block;
-  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
+  background: linear-gradient(135deg, rgb(56, 144, 215));
   color: var(--white);
   padding: 0.5rem 1rem;
   border-radius: 25px;
@@ -257,7 +258,7 @@
 .timeline-content h3 {
   font-size: 1.3rem;
   font-weight: 600;
-  color: var(--primary-orange);
+  color:rgb(137, 132, 132);
   margin-bottom: 1rem;
 }
 

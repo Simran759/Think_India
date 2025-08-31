@@ -14,16 +14,16 @@ const Footer = () => {
               <p>Empowering students to think, innovate, and lead.</p>
             </div>
             <div className="social-links">
-              <a href="#" className="social-link" aria-label="Facebook">
+              {/* <a href="#" className="social-link" aria-label="Facebook">
                 <FaFacebook />
               </a>
               <a href="#" className="social-link" aria-label="Twitter">
                 <FaTwitter />
-              </a>
-              <a href="#" className="social-link" aria-label="Instagram">
+              </a> */}
+              <a href="https://www.instagram.com/thinkindiamnit/" className="social-link" aria-label="Instagram">
                 <FaInstagram />
               </a>
-              <a href="#" className="social-link" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/thinkindiaorg/" className="social-link" aria-label="LinkedIn">
                 <FaLinkedin />
               </a>
             </div>

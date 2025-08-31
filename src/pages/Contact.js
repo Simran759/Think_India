@@ -27,7 +27,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-page">
+  <div className="contact-page" style={{ background: 'linear-gradient(135deg, #181c24 60%, #232a36 100%)', color: '#fff', minHeight: '100vh' }}>
       {/* Hero Section */}
       <section className="contact-hero">
         <div className="container">
