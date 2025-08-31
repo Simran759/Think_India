@@ -48,7 +48,7 @@
 .activity-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, rgb(56, 144, 215));
+  background:  rgb(56, 144, 215);
   border-radius: 50%;
   display: flex;
   align-items: center;
