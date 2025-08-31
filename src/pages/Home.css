@@ -1,3 +1,25 @@
+/* Timeline Responsive Fix */
+@media (max-width: 768px) {
+  .timeline-event {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  /* Stack timeline columns vertically */
+  .timeline-flex-fix {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 24px !important;
+  }
+  .timeline-flex-fix > div {
+    align-items: stretch !important;
+  }
+  .timeline-center-line {
+    display: none !important;
+  }
+}
 
 .btn-highlight {
   background: linear-gradient(135deg, #FFD93D, #FF8D21);

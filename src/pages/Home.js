@@ -142,7 +142,7 @@ const Home = () => {
           </motion.div>
 
           {/* Centered Timeline Layout: Upcoming left, Previous right */}
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', marginTop: 40, position: 'relative', minHeight: 400 }}>
+          <div className="timeline-flex-fix" style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', marginTop: 40, position: 'relative', minHeight: 400 }}>
             {/* Upcoming Events (Left) */}
             <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 32 }}>
               <div style={{ fontWeight: 700, fontSize: '1.2rem', color: '#1976d2', marginBottom: 16, alignSelf: 'flex-end' }}>Upcoming Events</div>
@@ -162,7 +162,7 @@ const Home = () => {
               </motion.div>
             </div>
             {/* Center Line */}
-            <div style={{ width: 4, background: '#1976d2', height: '100%', minHeight: 340, margin: '0 32px', borderRadius: 2 }}></div>
+            <div className="timeline-center-line" style={{ width: 4, background: '#1976d2', height: '100%', minHeight: 340, margin: '0 32px', borderRadius: 2 }}></div>
             {/* Previous Events (Right) */}
             <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 32 }}>
               <div style={{ fontWeight: 700, fontSize: '1.2rem', color: '#fbc02d', marginBottom: 16, alignSelf: 'flex-start' }}>Past Events</div>

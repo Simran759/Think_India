@@ -13,13 +13,26 @@ const Navbar = () => {
       const isScrolled = window.scrollY > 50;
       setScrolled(isScrolled);
     };
-
+    const handleResize = () => {
+      if (window.innerWidth > 768) setIsOpen(false);
+    };
+    const handleClickOutside = (e) => {
+      if (isOpen && !e.target.closest('.navbar-menu') && !e.target.closest('.navbar-toggle')) {
+        setIsOpen(false);
+      }
+    };
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    window.addEventListener('resize', handleResize);
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen]);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prev) => !prev);
   };
 
   const closeMenu = () => {
@@ -62,7 +75,7 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <div className={`navbar-menu ${isOpen ? 'active' : ''}`} style={{ marginLeft: 'auto' }}>
+  <div className={`navbar-menu${isOpen ? ' active' : ''}`} style={{ marginLeft: 'auto', zIndex: 2000 }}>
           {navLinks.map((link) => (
             <Link
               key={link.path}
