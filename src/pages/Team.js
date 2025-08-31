@@ -46,7 +46,7 @@ const Team = () => {
 
   return (
     <div className="w-full min-h-screen relative flex flex-col items-center"
-      style={{ background: 'radial-gradient(circle at top, #0a0a1f)' }}>
+      style={{ background: 'radial-gradient(circle at top, #0a0a1f)', paddingTop: '90px' }}>
       
       {/* Spotlight LightRays Background */}
       <div style={{ position: 'fixed', inset: 0, width: '100vw', height: '100vh', zIndex: 0, pointerEvents: 'none' }}>
@@ -71,7 +71,7 @@ const Team = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 style={{ color: '#ffffff', textShadow: '0 2px 18px rgba(255,255,255,0.5)', fontSize: '3rem', fontWeight: 800, letterSpacing: '0.04em', marginBottom: 8 }}>Our Team</h1>
+          <h1 style={{ color: '#ffffff', textShadow: '0 2px 18px rgba(255,255,255,0.5)', fontSize: '3rem', fontWeight: 800, letterSpacing: '0.04em',marginTop: 10, marginBottom: 8 }}>Our Team</h1>
           <p style={{ color: '#d0d0d0', fontSize: '1.2rem', fontWeight: 500, marginTop: 0, marginBottom: 0 }}>Meet the dedicated individuals who make Think India a success.</p>
         </motion.div>
       </section>
