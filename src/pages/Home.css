@@ -563,11 +563,11 @@
   /* If you want orange icons instead, use the line below instead of #fff */
   /* color: #FF8D21 !important; */
 }
-.about-icon svg, 
+/* .about-icon svg, 
 .about-icon i {
   color: #fff;
   font-size: 2rem;
-}
+} */
 
 @media (max-width: 480px) {
   .hero-title {
