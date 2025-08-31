@@ -192,7 +192,7 @@
 .about-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, rgb(56, 144, 215));
+  background:  rgb(56, 144, 215);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -237,7 +237,7 @@
 }
 
 .events-header {
-  background: linear-gradient(135deg, rgb(56, 144, 215));
+  background:  rgb(56, 144, 215);
   color: var(--white);
   padding: 1.5rem;
   display: flex;
@@ -550,6 +550,19 @@
   .events-grid {
     grid-template-columns: 1fr;
   }
+
+  /* Ensure icons are visible on mobile */
+  .about-icon,
+  .events-icon,
+  .contact-icon,
+  .social-link {
+    color: rgb(56, 144, 215) !important;
+    fill: #fff !important;
+    opacity: 1 !important;
+    z-index: 2;
+  }
+  /* If you want orange icons instead, use the line below instead of #fff */
+  /* color: #FF8D21 !important; */
 }
 
 @media (max-width: 480px) {
