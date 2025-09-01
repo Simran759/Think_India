@@ -31,7 +31,7 @@ const Home = () => {
               Empowering students to think, innovate, and lead. Building a brighter future for India through education, collaboration, and community service.
             </p>
             <div className="hero-buttons">
-              <a href="/youthfest" className="btn btn-highlight">🎉 Explore YouthFest</a>
+              <a href="/youthfest" className="btn btn-highlight"> Explore YouthFest</a>
             </div>
           </motion.div>
         </div>

@@ -3,24 +3,25 @@ import { motion } from 'framer-motion';
 import LightRays from '../components/Backgrounds/LightRays/LightRays';
 import ProfileCard from '../components/Components/ProfileCard/ProfileCard';
 import './Team.css';
+import {   instagramUrl, linkedinUrl } from 'react-icons/fa';
 
 const Team = () => {
-  const coreTeam = [
-    { id: 1, name: "Rahul Sharma", position: "President", image: "/events/satoliya.png", bio: "Leading Think India with vision and dedication.", email: "rahul@thinkindia.org" },
-    { id: 2, name: "Priya Patel", position: "Vice President", image: "/events/satoliya.png", bio: "Priya oversees operations and planning.", email: "priya@thinkindia.org" },
-    { id: 3, name: "Amit Kumar", position: "Secretary", image: "/events/satoliya.png", bio: "Amit manages communications.", email: "amit@thinkindia.org" }
+  const Faculty = [
+    { id: 1, name: "Rahul Sharma", position: "President", image: "/events/satoliya.png", linkedinUrl: "https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle" },
+    { id: 2, name: "Priya Patel", position: "Vice President", image: "/events/satoliya.png", linkedinUrl: "https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle" },
+    { id: 3, name: "Amit Kumar", position: "Secretary", image: "/events/satoliya.png",linkedinUrl:"https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle" }
   ];
 
-  const coordinators = [
-    { id: 1, name: "Neha Singh", position: "Events Coordinator", image:"/events/satoliya.png", bio: "Specializes in event planning.", email: "neha@thinkindia.org" },
-    { id: 2, name: "Vikram Mehta", position: "Technical Coordinator", image: "/events/satoliya.png", bio: "Leads technical initiatives.", email: "vikram@thinkindia.org" },
-    { id: 3, name: "Anjali Desai", position: "Outreach Coordinator", image: "/events/satoliya.png", bio: "Manages outreach & partnerships.", email: "anjali@thinkindia.org" }
+  const Advisors = [
+    { id: 1, name: "Neha Singh", position: "Events Coordinator", image:"/events/satoliya.png",  linkedinUrl:"https://linkedin.com/in/yourhandle" ,  instagramUrl:"https://instagram.com/yourhandle"},
+    { id: 2, name: "Vikram Mehta", position: "Technical Coordinator", image: "/events/satoliya.png",  linkedinUrl: "https://linkedin.com/in/yourhandle" ,  instagramUrl:"https://instagram.com/yourhandle"},
+    { id: 3, name: "Anjali Desai", position: "Outreach Coordinator", image: "/events/satoliya.png",  linkedinUrl: "https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle" }
   ];
 
-  const volunteers = [
-    { id: 1, name: "Arjun Reddy", position: "Volunteer", image: "/events/satoliya.png", bio: "Community service & event organization.", email: "arjun@thinkindia.org" },
-    { id: 2, name: "Zara Khan", position: "Volunteer", image: "/events/satoliya.png", bio: "Manages social media content.", email: "zara@thinkindia.org" },
-    { id: 3, name: "Rohan Gupta", position: "Volunteer", image: "/events/satoliya.png", bio: "Supports technical projects.", email: "rohan@thinkindia.org" }
+  const CoreTeam = [
+    { id: 1, name: "Simran", position: "Technical", image: "/team_member_pic/simran.jpg", linkedinUrl: "https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle" },
+    { id: 2, name: "Zara Khan", position: "Volunteer", image: "/events/satoliya.png",  linkedinUrl:"https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle" },
+    { id: 3, name: "Rohan Gupta", position: "Volunteer", image: "/events/satoliya.png",  linkedinUrl: "https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle" }
   ];
 
   const TeamMember = ({ member, delay }) => (
@@ -35,8 +36,11 @@ const Team = () => {
         avatarUrl={member.image}
         name={member.name}
         title={member.position}
-        handle={member.name.replace(/\s+/g, '').toLowerCase()}
-        status={member.bio}
+        // handle={member.name.replace(/\s+/g, '').toLowerCase()}
+        // status={member.bio}
+        id={member.id}
+          linkedinUrl={member.linkedinUrl}
+  instagramUrl={member.instagramUrl}
         contactText="Contact"
         showUserInfo={true}
         onContactClick={() => window.open(`mailto:${member.email}`)}
@@ -79,9 +83,9 @@ const Team = () => {
       {/* Core Team */}
       <section className="section core-team" style={{ position: 'relative', zIndex: 2, marginTop: '-12px' }}>
         <div className="container text-center">
-          <h2 style={{ color: '#fff', marginBottom: 12, marginTop: 0, fontSize: '2rem' }}>Core Team</h2>
+          <h2 style={{ color: '#fff', marginBottom: 12, marginTop: 0, fontSize: '2rem' }}>Faculty Advisors</h2>
           <div className="team-grid">
-            {coreTeam.map((m, i) => <TeamMember key={m.id} member={m} delay={i * 0.1} />)}
+            {Faculty.map((m, i) => <TeamMember key={m.id} member={m} delay={i * 0.1} />)}
           </div>
         </div>
       </section>
@@ -89,9 +93,9 @@ const Team = () => {
       {/* Coordinators */}
       <section className="section coordinators" style={{ position: 'relative', zIndex: 2 }}>
         <div className="container text-center">
-          <h2 style={{ color: '#fff' }}>Coordinators</h2>
+          <h2 style={{ color: '#fff' }}>Advisors</h2>
           <div className="team-grid">
-            {coordinators.map((m, i) => <TeamMember key={m.id} member={m} delay={i * 0.1} />)}
+            {Advisors.map((m, i) => <TeamMember key={m.id} member={m} delay={i * 0.1} />)}
           </div>
         </div>
       </section>
@@ -99,9 +103,9 @@ const Team = () => {
       {/* Volunteers */}
       <section className="section volunteers" style={{ position: 'relative', zIndex: 2 }}>
         <div className="container text-center">
-          <h2 style={{ color: '#fff' }}>Volunteers</h2>
+          <h2 style={{ color: '#fff' }}>CoreTeam</h2>
           <div className="team-grid">
-            {volunteers.map((m, i) => <TeamMember key={m.id} member={m} delay={i * 0.1} />)}
+            {CoreTeam.map((m, i) => <TeamMember key={m.id} member={m} delay={i * 0.1} />)}
           </div>
         </div>
       </section>
