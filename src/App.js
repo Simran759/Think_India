@@ -10,10 +10,12 @@ import Work from './pages/Work';
 import Contact from './pages/Contact';
 import Youthfest from './pages/Youthfest';
 import './App.css';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Navbar />
         <main>
@@ -33,4 +35,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;

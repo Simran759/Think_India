@@ -92,7 +92,7 @@ const About = () => {
           bottom: 20,
           left: "50%",
           transform: "translateX(-50%)",
-          display: "flex",
+          display: "inline-block",
           gap: 12,
           zIndex: 2,
         }}
@@ -103,11 +103,13 @@ const About = () => {
             style={{
               width: 14,
               height: 14,
-              borderRadius: "%",
+              borderRadius: "50%", // <-- Make dot a circle
               background: idx === slideIndex ? "#fbc02d" : "#fff",
               opacity: idx === slideIndex ? 1 : 0.5,
               border: idx === slideIndex ? "2px solid #fff" : "2px solid #fbc02d",
               transition: "all 0.3s",
+              display: "inline-block", // Ensure it's inline-block
+              margin: "0 6px", // Optional: add spacing between dots
             }}
           />
         ))}
@@ -429,4 +431,4 @@ const About = () => {
   );
 };
 
-export default About; 
+export default About;
