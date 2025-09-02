@@ -11,6 +11,7 @@ import Contact from './pages/Contact';
 import Youthfest from './pages/Youthfest';
 import ScrollToTop from './components/ScrollToTop';
 import './App.css';
+import ScrollToTop from './ScrollToTop';
 
 // Create a wrapper component to use useLocation hook
 function AppContent() {
@@ -29,29 +30,22 @@ function AppContent() {
   }, [location.pathname]);
 
   return (
-    <div className="App">
-      <Navbar />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/work" element={<Work />} />
-          {/* <Route path="/contact" element={<Contact />} /> */}
-          <Route path="/youthfest" element={<Youthfest />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
-  );
-}
-
-function App() {
-  return (
     <Router>
-      <ScrollToTop />
-      <AppContent />
+      <div className="App">
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/work" element={<Work />} />
+            {/* <Route path="/contact" element={<Contact />} /> */}
+            <Route path="/youthfest" element={<Youthfest />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }

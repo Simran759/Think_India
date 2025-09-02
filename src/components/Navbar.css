@@ -164,11 +164,12 @@ html, body {
   }
 
   .nav-link {
-    font-size: 1.2rem;
-    padding: 0.8rem 0;
-    width: 100%;
-    text-align: center;
-  }
+  display: block; 
+  padding: 1px 0;   /* reduce vertical padding */
+  margin: 0;        /* remove extra margin */
+  font-size: 14px;  /* you can also reduce font size if needed */
+  text-align: center;
+}
 
   .logo-text {
     font-size: 1.5rem;

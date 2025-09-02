@@ -93,7 +93,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isMobile && (
           <>
-            <div className="navbar-toggle" onClick={toggleMenu} style={{ color: '#FFD93D', zIndex: 2100, background: 'none', border: 'none', padding: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div className="navbar-toggle" onClick={toggleMenu} style={{ color: '#FFD93D', zIndex: 2100, background: 'none', border: 'none', padding: 0, display: 'flex', alignItems: 'center', justifyContent: 'center',fontSize: '20px' }}>
               {isOpen ? <FaTimes size={28} color="#FFD93D" /> : <FaBars size={28} color="#FFD93D" />}
             </div>
             <div className={`navbar-menu${isOpen ? ' active' : ''}`} style={{ marginLeft: 0, zIndex: 2000 }}>
