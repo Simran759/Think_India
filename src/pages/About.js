@@ -67,14 +67,20 @@ const About = () => {
           maxWidth: 700,
         }}
       >
-        <motion.h4
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          style={{ fontSize: "4rem", fontWeight: 600, marginBottom: 19 }}
-        >
-        About Think India
-        </motion.h4>
+          <motion.h4
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            style={{
+              fontSize: window.innerWidth <= 500 ? "2.2rem" : "3.2rem",
+              fontWeight: 600,
+              marginBottom: 8,
+              whiteSpace: "nowrap",
+              // lineHeight: 1.1,
+            }}
+          >
+            About Think India
+          </motion.h4>
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}

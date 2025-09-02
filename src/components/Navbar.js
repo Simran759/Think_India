@@ -70,7 +70,7 @@ const Navbar = () => {
               <img src="/logoti.jpg" alt="Think India Logo" style={{ height: '40px', width: '40px', objectFit: 'cover', borderRadius: '50%', background: '#fff' }} />
             </span>
             <span className="logo-text">Think India</span>
-            <div className="logo-accent"></div>
+            {/* <div className="logo-accent"></div> */}
           </div>
         </Link>
 

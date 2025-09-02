@@ -28,7 +28,7 @@ const Home = () => {
               Think India MNIT Jaipur
             </h1>
             <p className="hero-subtitle">
-              Empowering students to think, innovate, and lead. Building a brighter future for India through education, collaboration, and community service.
+              At MNIT, we are more than students—we are dreamers, doers, and changemakers. Through learning, dialogue, and community service, we strive to shape a future where India leads with innovation and compassion.
             </p>
             <div className="hero-buttons">
               <a href="/youthfest" className="btn btn-highlight">🎉 Explore YouthFest</a>
@@ -58,7 +58,7 @@ const Home = () => {
                   </svg>
                 </div>
                 <h3>Malaviya National Institute of Technology (MNIT) Jaipur</h3>
-                <p>MNIT Jaipur is one of India's premier engineering institutions, known for its academic excellence, vibrant campus life, and commitment to innovation and research. MNIT provides a nurturing environment for students to grow, collaborate, and lead in various fields.</p>
+                <p>MNIT Jaipur is more than an institute it’s a journey of growth. Every corner of the campus carries stories of dreams, hard work, and friendships that last a lifetime. Known for academic rigor and an unshakable spirit of innovation, MNIT gives its students more than degrees; it gives them purpose. Here, young minds evolve into responsible citizens and changemakers for India’s tomorrow.</p>
               </div>
             </div>
           </motion.div>
@@ -76,7 +76,9 @@ const Home = () => {
           >
             <h2 className="section-title">About Think India</h2>
             <p className="section-subtitle">
-              Think India is a student-driven organization dedicated to fostering leadership, innovation, and social responsibility among young minds.
+              Think India is a national movement of students and professionals dedicated to cultivating leadership, innovation, and social responsibility among India’s youth.
+At MNIT Jaipur, Think India is more than a student body—it is a platform where young minds come together to discuss, create, and implement ideas that matter. Through our programs, internships, and events, we empower students to think deeply, act decisively, and lead with purpose.
+
             </p>
           </motion.div>
 
@@ -92,7 +94,9 @@ const Home = () => {
                 <FaLightbulb />
               </div>
               <h3>Motive</h3>
-              <p>To inspire and empower students to become proactive leaders who contribute positively to society through innovative thinking and collaborative action.</p>
+              <p>Our motive is simple yet powerful: to inspire and empower students to become proactive leaders who drive positive change in society.
+We believe that every student carries the potential to contribute—whether through research, social work, entrepreneurship, or policymaking—and Think India MNIT serves as the bridge to make it happen.
+</p>
             </motion.div>
 
             <motion.div 
@@ -106,7 +110,11 @@ const Home = () => {
                 <FaTrophy />
               </div>
               <h3>Goals</h3>
-              <p>Develop leadership skills, promote social awareness, create networking opportunities, and foster a culture of innovation and entrepreneurship among students.</p>
+              <p>• Develop Leadership Skills – Groom students to take initiative and lead with confidence.<br></br>
+                •	Promote Social Awareness – Encourage a deeper understanding of the issues facing our nation.<br></br>
+                •	Build Strong Networks – Create opportunities to connect with peers, professionals, and thought leaders.<br></br> 
+                •	Foster Innovation & Entrepreneurship – Inspire students to think creatively and transform ideas into impactful solutions.
+</p>
             </motion.div>
 
             <motion.div 
@@ -120,7 +128,13 @@ const Home = () => {
                 <FaHandshake />
               </div>
               <h3>Vision & Mission</h3>
-              <p>To be the leading student organization that shapes future leaders and creates positive social impact through education, collaboration, and community service.</p>
+              <p>Vision:
+To build a generation of leaders at MNIT Jaipur who are socially responsible, innovative, and committed to the idea of a self-reliant and progressive Bharat.<br></br>
+Mission:<br></br>
+•	To provide students with exposure through internships, workshops, and social initiatives.<br></br>  
+•	To nurture a culture of critical thinking, dialogue, and collaboration on campus.<br></br>
+•	To align student potential with the broader vision of nation-building and global leadership.
+</p>
             </motion.div>
           </div>
         </div>
@@ -288,149 +302,9 @@ const Home = () => {
         </div>
       </section> */}
 
-      {/* Work Section */}
-      <section id="work" className="section work-section">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="section-title">Our Work</h2>
-            <p className="section-subtitle">
-              Discover the impact we've made through our various initiatives and collaborations.
-            </p>
-          </motion.div>
+      
 
-          <div className="work-grid">
-            <motion.div 
-              className="work-card"
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-            >
-              <h3>Detailed Overview of Activities</h3>
-              <ul>
-                <li>Leadership Development Programs</li>
-                <li>Technical Workshops & Hackathons</li>
-                <li>Community Service Initiatives</li>
-                <li>Industry Connect Programs</li>
-                <li>Cultural & Social Events</li>
-              </ul>
-            </motion.div>
-
-            <motion.div 
-              className="work-card"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <h3>Collaborations</h3>
-              <ul>
-                <li>Industry Partners: Tech Giants & Startups</li>
-                <li>Educational Institutions</li>
-                <li>Government Organizations</li>
-                <li>NGOs & Social Enterprises</li>
-                <li>International Student Organizations</li>
-              </ul>
-            </motion.div>
-
-            <motion.div 
-              className="work-card"
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-            >
-              <h3>Impact & Achievements</h3>
-              <ul>
-                <li>5000+ Students Impacted</li>
-                <li>50+ Successful Events Organized</li>
-                <li>100+ Industry Connections</li>
-                <li>25+ Awards & Recognitions</li>
-                <li>10+ Community Projects Completed</li>
-              </ul>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section
-      <section id="contact" className="section contact-section">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="section-title">Contact Us</h2>
-            <p className="section-subtitle">
-              Get in touch with us to learn more about Think India and how you can get involved.
-            </p>
-          </motion.div>
-
-          <div className="contact-grid">
-            <motion.div 
-              className="contact-info"
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-            >
-              <div className="contact-item">
-                <FaEnvelope className="contact-icon" />
-                <div>
-                  <h4>Email</h4>
-                  <p>info@thinkindia.org</p>
-                  <p>contact@thinkindia.org</p>
-                </div>
-              </div>
-              <div className="contact-item">
-                <FaUsers className="contact-icon" />
-                <div>
-                  <h4>Phone</h4>
-                  <p>+91 98765 43210</p>
-                  <p>+91 87654 32109</p>
-                </div>
-              </div>
-              <div className="contact-item">
-                <FaHandshake className="contact-icon" />
-                <div>
-                  <h4>Social Media</h4>
-                  <div className="social-links">
-                    <a href="#" className="social-link">LinkedIn</a>
-                    <a href="#" className="social-link">Twitter</a>
-                    <a href="#" className="social-link">Instagram</a>
-                    <a href="#" className="social-link">Facebook</a>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div 
-              className="contact-map"
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <div className="map-placeholder">
-                <h4>Google Map</h4>
-                <p>Interactive map showing our location</p>
-                <div className="map-content">
-                  <div className="map-marker"></div>
-                  <p>Think India Headquarters</p>
-                  <p>Main Campus, University Area</p>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section> */}
+      
     </div>
   );
 };

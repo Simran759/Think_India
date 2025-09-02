@@ -133,11 +133,16 @@ const Events = () => {
       maxWidth: 700,
     }}
   >
-    <motion.h4
+       <motion.h4
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      style={{ fontSize: "4rem", fontWeight: 600, marginBottom: 19 }}
+      style={{
+        fontSize: window.innerWidth <= 500 ? "3rem" : "4rem", // ✅ smaller size on phones
+        fontWeight: 600,
+        marginBottom: 19,
+        whiteSpace: "nowrap", // ✅ keep in one line
+      }}
     >
       Our Events
     </motion.h4>

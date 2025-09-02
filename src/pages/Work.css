@@ -209,7 +209,8 @@
 
 @media (max-width: 480px) {
   .work-hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;  /* reduced for phones so "Our Work" stays in one line */
+    white-space: nowrap; /* force text to stay in one line */
   }
   
   .work-hero-content p {
@@ -225,4 +226,4 @@
   .impact-number {
     font-size: 2.5rem;
   }
-} 
+}

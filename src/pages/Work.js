@@ -69,18 +69,24 @@ const Work = () => {
       }}
     >
       <motion.h4
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        style={{ fontSize: "4rem", fontWeight: 600, marginBottom: 19 }}
-      >
-        Our Work
-      </motion.h4>
+  initial={{ opacity: 0, y: 40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  style={{
+    fontSize: window.innerWidth <= 500 ? "3rem" : "4rem", // ✅ smaller size on phones
+    fontWeight: 600,
+    marginBottom: 19,
+    whiteSpace: "nowrap", // ✅ keep in one line
+  }}
+>
+  Our Work
+</motion.h4>
+
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
-        style={{ fontSize: "1.2rem", color: "#d0d0d0", fontWeight: 500 }}
+        style={{ fontSize: "1.3rem", color: "#d0d0d0", fontWeight: 500 }}
       >
        Discover the impact we've made through our various initiatives and collaborations.
       </motion.h2>
