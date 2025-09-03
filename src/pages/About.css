@@ -89,7 +89,7 @@
   text-align: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-top: 4px solid var(--primary-orange);
+  border-top: 4px solid rgb(56, 144, 215);
 }
 
 .value-card:hover {

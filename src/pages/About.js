@@ -137,7 +137,11 @@ const About = () => {
                 <FaLightbulb />
               </div>
               <h2>Our Mission</h2>
-              <p>To inspire and empower students to become proactive leaders who contribute positively to society through innovative thinking and collaborative action. We strive to create a platform where young minds can develop their potential, connect with like-minded individuals, and make a meaningful impact on their communities.</p>
+              <ul style={{ paddingLeft: 18, margin: 0, color: "rgb(137, 132, 132)", textAlign: 'left' }}>
+                  <li>To provide students with exposure through internships, workshops, and social initiatives.</li>
+                  <li>To nurture a culture of critical thinking, dialogue, and collaboration on campus.</li>
+                  <li>To align student potential with the broader vision of nation-building and global leadership.</li>
+                </ul>
             </motion.div>
 
             <motion.div
@@ -151,7 +155,9 @@ const About = () => {
                 <FaTrophy />
               </div>
               <h2>Our Vision</h2>
-              <p>To be the leading student organization that shapes future leaders and creates positive social impact through education, collaboration, and community service. We envision a world where every student has the opportunity to develop their leadership potential and contribute to building a better society.</p>
+              <p>
+                Our vision is to nurture leaders at MNIT Jaipur who are innovative, socially responsible, and committed to a self-reliant, progressive Bharat. We empower students to think critically, act ethically, and collaborate for positive change, inspiring them to become changemakers who contribute to society and the nation’s future.
+              </p>
             </motion.div>
           </div>
         </div>

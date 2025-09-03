@@ -4,24 +4,25 @@ import LightRays from '../components/Backgrounds/LightRays/LightRays';
 import ProfileCard from '../components/Components/ProfileCard/ProfileCard';
 import './Team.css';
 import {   instagramUrl, linkedinUrl } from 'react-icons/fa';
+import { em } from 'motion/react-client';
 
 const Team = () => {
   const Faculty = [
-    { id: 1, name: "Rahul Sharma", position: "President", image: "/events/satoliya.png", linkedinUrl: "https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle" },
-    { id: 2, name: "Priya Patel", position: "Vice President", image: "/events/satoliya.png", linkedinUrl: "https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle" },
-    { id: 3, name: "Amit Kumar", position: "Secretary", image: "/events/satoliya.png",linkedinUrl:"https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle" }
+    { id: 1, name: "Rahul Sharma", position: "President", image: "/events/satoliya.png", linkedinUrl: "https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle" ,email:""},
+    { id: 2, name: "Priya Patel", position: "Vice President", image: "/events/satoliya.png", linkedinUrl: "https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle",email:"" },
+    { id: 3, name: "Amit Kumar", position: "Secretary", image: "/events/satoliya.png",linkedinUrl:"https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle",email:"" }
   ];
 
   const Advisors = [
-    { id: 1, name: "Neha Singh", position: "Events Coordinator", image:"/events/satoliya.png",  linkedinUrl:"https://linkedin.com/in/yourhandle" ,  instagramUrl:"https://instagram.com/yourhandle"},
-    { id: 2, name: "Vikram Mehta", position: "Technical Coordinator", image: "/events/satoliya.png",  linkedinUrl: "https://linkedin.com/in/yourhandle" ,  instagramUrl:"https://instagram.com/yourhandle"},
-    { id: 3, name: "Anjali Desai", position: "Outreach Coordinator", image: "/events/satoliya.png",  linkedinUrl: "https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle" }
+    { id: 1, name: "Neha Singh", position: "Events Coordinator", image:"/events/satoliya.png",  linkedinUrl:"https://linkedin.com/in/yourhandle" ,  instagramUrl:"https://instagram.com/yourhandle",email:""},
+    { id: 2, name: "Vikram Mehta", position: "Technical Coordinator", image: "/events/satoliya.png",  linkedinUrl: "https://linkedin.com/in/yourhandle" ,  instagramUrl:"https://instagram.com/yourhandle",email:""},
+    { id: 3, name: "Anjali Desai", position: "Outreach Coordinator", image: "/events/satoliya.png",  linkedinUrl: "https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle" ,email:"" }
   ];
 
   const CoreTeam = [
-    { id: 1, name: "Simran", position: "Technical", image: "/team_member_pic/simran.jpg", linkedinUrl: "https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle" },
-    { id: 2, name: "Zara Khan", position: "Volunteer", image: "/events/satoliya.png",  linkedinUrl:"https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle" },
-    { id: 3, name: "Rohan Gupta", position: "Volunteer", image: "/events/satoliya.png",  linkedinUrl: "https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle" }
+    { id: "2023UCP1610", name: "Simran", position: "Technical", image: "/team_member_pic/simran.jpg", linkedinUrl: "https://www.linkedin.com/in/simran-3b680128a/",  instagramUrl:"https://www.instagram.com/simm_i8168/",email:"2023ucp1610@mnit.ac.in" },
+    { id: "2023UME1777", name: "Kamini Tomar", position: "Content Writing", image: "/team_member_pic/KAMINI TOMAR.jpg",  linkedinUrl:"https://www.linkedin.com/in/kamini-tomar/",  instagramUrl:"https://www.instagram.com/kamini_1239/",email:"2023ume1777@mnit.ac.in" },
+    { id: "2023ume1778", name: "Shubh Patel", position: "Design ", image: "/team_member_pic/SHUBH PATEL.jpg",  linkedinUrl: "https://www.linkedin.com/in/shubh-patel-656858367/",  instagramUrl:"https://www.instagram.com/shubhpatel5445/" ,email:"2023ume1778@mnit.ac.in" }
   ];
 
   const TeamMember = ({ member, delay }) => (

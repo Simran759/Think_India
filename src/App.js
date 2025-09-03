@@ -7,11 +7,9 @@ import About from './pages/About';
 import Events from './pages/Events';
 import Team from './pages/Team';
 import Work from './pages/Work';
-import Contact from './pages/Contact';
 import Youthfest from './pages/Youthfest';
-// import ScrollToTop from './components/ScrollToTop';
 import './App.css';
-import ScrollToTop from './ScrollToTop';
+
 
 // Create a wrapper component to use useLocation hook
 function App() {

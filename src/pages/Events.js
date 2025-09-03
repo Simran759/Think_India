@@ -18,67 +18,89 @@ const Events = () => {
     return () => clearInterval(interval);
   }, [slideshowImages.length]);
   const upcomingEvents = [
-    {
+        {
       id: 1,
-      title: "Leadership Summit 2024",
-      date: "March 15-17, 2024",
+      title: "Choti Diwali – Donation Drive",
+      date: "October 2025",
       time: "9:00 AM - 6:00 PM",
-      location: "Main Campus Auditorium",
-      description: "A three-day intensive leadership development program featuring workshops, keynote speakers, and networking opportunities.",
+      location: "College Main Gate, OAT, Hostel Lobbies",
+      description: "A meaningful initiative to collect clothes, books, food items, and stationery, spreading light and hope beyond campus walls.",
       participants: "200+",
-  image: "/events/discoverhunt.png"
+  image: "/events/Donation_drive.jpg"
     },
+  
+
+
     {
       id: 2,
-      title: "Innovation Workshop",
-      date: "March 25, 2024",
-      time: "2:00 PM - 5:00 PM",
-      location: "Innovation Lab",
-      description: "Hands-on workshop focused on design thinking and innovation methodologies for solving real-world problems.",
+      title: " Badi Diwali – Ethnic Dress Competition",
+      date: "October 2025",
+      time: "7:30 PM – 9:30 PM",
+      location: "OAT Main Stage",
+      description: "A cultural walk celebrating India’s diversity through traditional attire. Judged on creativity, cultural authenticity, confidence, and presentation.",
       participants: "50",
-  image: "/events/discoverhunt.png"
+  image: "/events/ethinc_wear.jpg"
     },
+  
     {
       id: 3,
-      title: "Tech Fest 2024",
-      date: "April 10-12, 2024",
+      title: " November Technical Workshop",
+      date: "1–6 November 2025",
       time: "10:00 AM - 8:00 PM",
-      location: "Engineering Block",
-      description: "Annual technology festival featuring hackathons, tech talks, and project showcases.",
-      participants: "500+",
-  image: "/events/discoverhunt.png"
+      location: "VLTC Classrooms",
+      description: "A knowledge-driven workshop featuring expert speakers on cutting-edge topics like Web Development, AI, and Machine Learning. Students gain practical, real-world insights.",
+      participants: "75+",
+  image: "/events/technical.jpeg"
     }
   ];
 
   const pastEvents = [
+      {id:1,
+    title:"Ganesh Chaturthi Celebration",
+    date: "27-28 August, 2025",
+    location:"Mnit Oat ",
+    description:"The day began with a vibrant procession of Lord Ganesha from Prabha Marg Circle to the Open Air Theatre, filled with dhol-tasha beats, chants of “Ganpati Bappa Morya!”, and energetic student participation. At OAT, celebrations included a dance performance by Level X, Maha Puja and installation, soulful aarti with prasad, and an evening aarti with large student gatherings. With overwhelming participation from students and faculty, the event became a festival of unity, devotion, and cultural harmony, concluding with heartfelt chants as MNIT Jaipur bid farewell to Bappa."
+   ,
+      impact: "500+ students attended , 100+ faculty members , Director Sir and Deans graced the event", 
+  image: "/events/Ganesh_Chaturthi.jpg"
+  },
     {
-      id: 1,
+      id: 2,
       title: " Discover India – The Puzzle Hunt",
       date: " February 7, 2025 ",
       location: "VLTC L-008, MNIT Jaipur ",
-      description: "The event was structured in two phases. In the first phase, participants solved riddles that guided them to different locations within the venue where puzzle pieces were hidden. The collected pieces were assembled in the second phase to complete the India map, determining the winner. ",
-
-      impact: "250+ people participated ",
+      description: "As part of the Blitz events, Think India MNIT organized an exciting puzzle-based treasure hunt, where teams raced to solve riddles, collect pieces, and complete the map of India. The event brilliantly combined logical reasoning, speed, and cultural awareness in a lively competitive spirit.Participants showcased their problem-solving skills while engaging in an intense yet fun-filled race across departments. The creative format and energetic atmosphere made the event a memorable experience, receiving immense appreciation from all."
+      ,impact: "250+ people participated ",
   image: "/events/discoverhunt.png"
     },
-    {
-      id: 2,
-      title: "Satoliya",
+     {
+      id: 3,
+      title: " Tug of War ",
       date: "January 12, 2025",
       location: "University Grounds",
-      description: "Satoliya 2025, held on January 12 at MNIT Jaipur by Think India MNIT, brought students together to relive childhood through the traditional game of Seven Stones. With 15+ teams competing, the event promoted teamwork, strategy, and fun.",
+      description: "The Tug of War event at Youth Fest 2025 witnessed an electrifying atmosphere as 18 teams battled it out in high-energy knockout rounds. The roaring crowds amplified the thrill of each match, making the competition even more intense. The final showdown between Purwanchal ke Sher and Danav kept everyone on the edge of their seats, with Purwanchal ke Sher emerging as the ultimate champions."
+  , impact: "15+ teams participated",
+      image: "/events/Tug_of_war.png"
+    },
+    {
+      id: 4,
+      title: "Satoliya - Reliving Childhood Games ",
+      date: "January 12, 2025",
+      location: "University Grounds",
+      description: "Satoliya 2025 brought back the charm of the traditional game Seven Stones. With 15+ teams battling it out through rounds, semis, and the grand finale, the event turned into a perfect mix of nostalgia and competition. Students from across departments showcased strategy, teamwork, and sportsmanship, making Satoliya one of the most fun and loved highlights of YouthFest 2024.",
       impact: "15+ teams participated",
   image: "/events/satoliya.png"
     },
     
-  { id: 3, 
+  { id: 5, 
     title: "Ace Your Career in Civil Services – A Power-Packed UPSC Seminar", 
     date: "April 8, 2025 ", 
     location: "APJ Abdul Kalam Hall, VLTC, MNIT Jaipur ", 
- description: "An impactful seminar 'Ace Your Career in Civil Services' organized by Think India MNIT, featuring Mr. Sunil Oberoi (Ex-IAS, Former Secretary, GoI) and Mr. Kapil Jain (Assistant Director, Vajiram & Ravi IAS). The event provided UPSC aspirants with real-life insights, preparation strategies, and motivational guidance for pursuing careers in civil services.",
+ description: "Think India MNIT organized an impactful seminar featuring Mr. Sunil Oberoi (Ex-IAS, Former UPSC Examiner) and Mr. Kapil Jain (Vajiram & Ravi IAS), bringing invaluable guidance to aspiring civil servants. The session provided insider insights and mentorship for UPSC preparation.At the seminar, the speakers shared inspiring journeys, highlighted effective preparation methods, and engaged in an interactive Q&A session. The event also created meaningful networking opportunities for aspirants.With the hall brimming with enthusiastic participants, the seminar emerged as a resounding success, leaving students motivated and better equipped to pursue their UPSC dreams.",
 
     impact: "250+ students benefited", 
-  image: "/events/civilservices.jpg.png" }
+  image: "/events/civilservices.jpg.png" },
+
     
   ];
 
