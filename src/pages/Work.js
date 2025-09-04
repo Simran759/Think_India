@@ -105,17 +105,19 @@ const Work = () => {
       }}
     >
       {slideshowImages.map((_, idx) => (
-        <span
-          key={idx}
-          style={{
-            width: 14,
-            height: 14,
-            borderRadius: "%",
-            background: idx === slideIndex ? "#fbc02d" : "#fff",
-            opacity: idx === slideIndex ? 1 : 0.5,
-            border: idx === slideIndex ? "2px solid #fff" : "2px solid #fbc02d",
-            transition: "all 0.3s",
-          }}
+          <span
+            key={idx}
+            style={{
+              width: 14,
+              height: 14,
+              borderRadius: "50%", // <-- Make dot a circle
+              background: idx === slideIndex ? "#fbc02d" : "#fff",
+              opacity: idx === slideIndex ? 1 : 0.5,
+              border: idx === slideIndex ? "2px solid #fff" : "2px solid #fbc02d",
+              transition: "all 0.3s",
+              display: "inline-block", // Ensure it's inline-block
+              margin: "0 0px", // Optional: add spacing between dots
+            }}
         />
       ))}
     </div>

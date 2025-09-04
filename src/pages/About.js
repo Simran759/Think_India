@@ -115,7 +115,7 @@ const About = () => {
               border: idx === slideIndex ? "2px solid #fff" : "2px solid #fbc02d",
               transition: "all 0.3s",
               display: "inline-block", // Ensure it's inline-block
-              margin: "0 6px", // Optional: add spacing between dots
+              margin: "0 5px", // Optional: add spacing between dots
             }}
           />
         ))}
@@ -188,7 +188,7 @@ const About = () => {
                 <FaUsers />
               </div>
               <h3>Leadership</h3>
-              <p>We believe in developing strong, ethical leaders who can inspire and guide others towards positive change.</p>
+              <p>Cultivating ethical leaders who inspire change.</p>
             </motion.div>
 
             <motion.div
@@ -202,7 +202,7 @@ const About = () => {
                 <FaLightbulb />
               </div>
               <h3>Innovation</h3>
-              <p>We encourage creative thinking and innovative solutions to address complex challenges in our society.</p>
+              <p>Cultivating ethical leaders who inspire change.</p>
             </motion.div>
 
             <motion.div
@@ -216,7 +216,7 @@ const About = () => {
                 <FaHandshake />
               </div>
               <h3>Collaboration</h3>
-              <p>We foster partnerships and teamwork, believing that collective effort leads to greater impact and success.</p>
+              <p>Building strong partnerships and teamwork.</p>
             </motion.div>
 
             <motion.div
@@ -230,7 +230,7 @@ const About = () => {
                 <FaHeart />
               </div>
               <h3>Social Responsibility</h3>
-              <p>We are committed to making a positive difference in our communities through service and ethical practices.</p>
+              <p>– Serving communities with empathy and impact.</p>
             </motion.div>
 
             <motion.div
@@ -244,7 +244,7 @@ const About = () => {
                 <FaChartLine />
               </div>
               <h3>Excellence</h3>
-              <p>We strive for excellence in everything we do, maintaining high standards and continuous improvement.</p>
+              <p>Striving for continuous improvement and high standards.</p>
             </motion.div>
 
             <motion.div
@@ -258,7 +258,7 @@ const About = () => {
                 <FaTrophy />
               </div>
               <h3>Integrity</h3>
-              <p>We conduct ourselves with honesty, transparency, and ethical behavior in all our interactions and activities.</p>
+              <p>Acting with honesty, transparency, and ethics.</p>
             </motion.div>
           </div>
         </div>
@@ -287,7 +287,7 @@ const About = () => {
             >
               <div className="goal-number">01</div>
               <h3>Leadership Development</h3>
-              <p>Develop leadership skills and qualities in students through workshops, training programs, and hands-on experiences.</p>
+              <p>Build leadership skills through workshops, training, and hands-on experiences.</p>
             </motion.div>
 
             <motion.div
@@ -299,7 +299,7 @@ const About = () => {
             >
               <div className="goal-number">02</div>
               <h3>Social Awareness</h3>
-              <p>Promote social awareness and responsibility through community service projects and educational initiatives.</p>
+              <p>Drive initiatives that promote responsibility and service.</p>
             </motion.div>
 
             <motion.div
@@ -311,7 +311,7 @@ const About = () => {
             >
               <div className="goal-number">03</div>
               <h3>Networking Opportunities</h3>
-              <p>Create networking opportunities with industry professionals, alumni, and other student organizations.</p>
+              <p>Connect students with industry leaders, alumni, and peers.</p>
             </motion.div>
 
             <motion.div
@@ -323,7 +323,7 @@ const About = () => {
             >
               <div className="goal-number">04</div>
               <h3>Innovation & Entrepreneurship</h3>
-              <p>Foster a culture of innovation and entrepreneurship through hackathons, startup competitions, and mentorship programs.</p>
+              <p>Connect students with industry leaders, alumni, and peers.</p>
             </motion.div>
 
             <motion.div
@@ -335,7 +335,7 @@ const About = () => {
             >
               <div className="goal-number">05</div>
               <h3>Cultural Exchange</h3>
-              <p>Promote cultural exchange and diversity through events, workshops, and collaborative projects with international organizations.</p>
+              <p>Foster diversity and understanding through cultural and international collaborations.</p>
             </motion.div>
 
             <motion.div
@@ -347,7 +347,7 @@ const About = () => {
             >
               <div className="goal-number">06</div>
               <h3>Skill Enhancement</h3>
-              <p>Enhance technical and soft skills through workshops, training sessions, and practical learning experiences.</p>
+              <p>Provide technical and soft skill development through training and practice.</p>
             </motion.div>
           </div>
         </div>
@@ -377,7 +377,7 @@ const About = () => {
               <div className="timeline-content">
                 <div className="timeline-year">2020</div>
                 <h3>Foundation</h3>
-                <p>Think India was founded with a vision to empower students and create positive social impact through leadership development.</p>
+                <p>Think India MNIT was founded with a vision to empower students and create positive social impact.</p>
               </div>
             </motion.div>
 
@@ -390,8 +390,8 @@ const About = () => {
             >
               <div className="timeline-content">
                 <div className="timeline-year">2021</div>
-                <h3>First Major Event</h3>
-                <p>Successfully organized our first leadership summit with 200+ participants, marking the beginning of our impactful journey.</p>
+                <h3>First Milestone</h3>
+                <p>Organized the first Leadership Summit with 200+ participants, kickstarting our journey.</p>
               </div>
             </motion.div>
 
@@ -405,7 +405,7 @@ const About = () => {
               <div className="timeline-content">
                 <div className="timeline-year">2022</div>
                 <h3>Expansion</h3>
-                <p>Expanded to multiple campuses and established partnerships with industry leaders and educational institutions.</p>
+                <p>Grew across multiple campuses, partnering with educational institutions and industry leaders.</p>
               </div>
             </motion.div>
 
@@ -419,7 +419,7 @@ const About = () => {
               <div className="timeline-content">
                 <div className="timeline-year">2023</div>
                 <h3>Recognition</h3>
-                <p>Received multiple awards and recognitions for our contributions to student development and community service.</p>
+                <p>Earned awards for contributions to student development and community service.</p>
               </div>
             </motion.div>
 
@@ -433,7 +433,7 @@ const About = () => {
               <div className="timeline-content">
                 <div className="timeline-year">2024</div>
                 <h3>Future Forward</h3>
-                <p>Continuing to innovate and expand our reach, with plans for international collaborations and digital transformation.</p>
+                <p>Expanding globally with international collaborations and digital initiatives.</p>
               </div>
             </motion.div>
           </div>

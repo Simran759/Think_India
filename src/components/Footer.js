@@ -46,11 +46,11 @@ const Footer = () => {
             <div className="contact-info">
               <div className="contact-item">
                 <FaEnvelope />
-                <span>info@thinkindia.org</span>
+                <span>thinkindia@mnit.ac.in</span>
               </div>
               <div className="contact-item">
                 <FaPhone />
-                <span>+91 98765 43210</span>
+                <span>+91 9050470760</span>
               </div>
             </div>
           </div>
