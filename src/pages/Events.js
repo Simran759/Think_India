@@ -393,49 +393,6 @@ const Events = () => {
         </div>
       </section>
 
-      {/* Event Calendar Section
-      <section className="section event-calendar">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="section-title">Event Calendar</h2>
-            <p className="section-subtitle">Stay updated with our upcoming events and activities</p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="calendar-placeholder"
-          >
-            <div className="calendar-content">
-              <h3>Interactive Event Calendar</h3>
-              <p>View all our upcoming events, workshops, and activities in one place.</p>
-              <div className="calendar-grid">
-                <div className="calendar-month">
-                  <h4>March 2024</h4>
-                  <div className="calendar-days">
-                    <div className="calendar-day event-day">15-17</div>
-                    <div className="calendar-day event-day">25</div>
-                  </div>
-                </div>
-                <div className="calendar-month">
-                  <h4>April 2024</h4>
-                  <div className="calendar-days">
-                    <div className="calendar-day event-day">10-12</div>
-                  </div>
-                </div>
-              </div>
-              <button className="btn btn-primary">View Full Calendar</button>
-            </div>
-          </motion.div>
-        </div>
-      </section> */}
     </div>
   );
 };
