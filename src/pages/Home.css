@@ -99,6 +99,11 @@
   font-weight: 700;
   margin-bottom: 1.5rem;
   line-height: 1.2;
+  background: linear-gradient(90deg, #FF9933 0%, #FFFFFF 50%, #138808 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .highlight {

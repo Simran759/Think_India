@@ -1,6 +1,6 @@
 import React from 'react';
 import './Youthfest.css';
-import { FaCalendarAlt, FaMapMarkerAlt, FaClock, FaUsers } from 'react-icons/fa';
+import { FaCalendarAlt, FaMapMarkerAlt, FaUsers } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 const Youthfest = () => {
   // Slideshow images for all pages except Team and Contact

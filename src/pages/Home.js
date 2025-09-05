@@ -1,14 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaUsers, FaCalendarAlt, FaLightbulb, FaHandshake, FaTrophy, FaEnvelope } from 'react-icons/fa';
+import { FaLightbulb, FaTrophy } from 'react-icons/fa';
 import './Home.css';
 
 const Home = () => {
-  const fadeInUp = {
-    initial: { opacity: 0, y: 60 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6 }
-  };
+
 
   return (
   <div className="home"  style={{ background: 'linear-gradient(135deg, #0a0a1f 60%, #232a36 100%)', color: '#fff', minHeight: '100vh' }}>
@@ -78,9 +74,7 @@ const Home = () => {
             <div className="about-grid">
               <div className="about-card">
         
-                <p> Think India is a national movement of students and professionals dedicated to cultivating leadership, innovation, and social responsibility among India’s youth.
-At MNIT Jaipur, Think India is more than a student body—it is a platform where young minds come together to discuss, create, and implement ideas that matter. Through our programs, internships, and events, we empower students to think deeply, act decisively, and lead with purpose.
-</p>
+                <p> Think India is a national student organization dedicated to fostering leadership, innovation, and social responsibility. Founded in 2006, we have grown into a pan-India movement that empowers students to contribute meaningfully to nation-building through various initiatives and programs.</p>
               </div>
             </div>
            
@@ -97,10 +91,8 @@ At MNIT Jaipur, Think India is more than a student body—it is a platform where
               <div className="about-icon">
                 <FaLightbulb />
               </div>
-              <h3>Motive</h3>
-              <p>Our motive is simple yet powerful: to inspire and empower students to become proactive leaders who drive positive change in society.
-We believe that every student carries the potential to contribute—whether through research, social work, entrepreneurship, or policymaking—and Think India MNIT serves as the bridge to make it happen.
-</p>
+              <h3>Vision</h3>
+              <p>To be the leading student organization that nurtures future leaders who are committed to India's development and progress, combining traditional values with modern innovation. We envision a united India where young minds drive positive change through leadership and innovation.</p>
             </motion.div>
 
             <motion.div 
@@ -114,12 +106,9 @@ We believe that every student carries the potential to contribute—whether thro
                 <FaTrophy />
               </div>
               <h3>Goals</h3>
-                <ul style={{ paddingLeft: 18, margin: 0, color: "rgb(137, 132, 132)", textAlign: 'left' }}>
-                <li>Develop Leadership Skills – Groom students to take initiative and lead with confidence.</li>
-                <li>Promote Social Awareness – Encourage a deeper understanding of the issues facing our nation.</li>
-                <li>Build Strong Networks – Create opportunities to connect with peers, professionals, and thought leaders.</li>
-                <li>Foster Innovation & Entrepreneurship – Inspire students to think creatively and transform ideas into impactful solutions.</li>
-              </ul>
+                <p>
+                  Our primary goals include developing leadership skills, promoting social responsibility, and creating platforms for meaningful dialogue. We aim to connect students with opportunities for growth, learning, and making a positive impact on society.
+                </p>
             </motion.div>
 
             {/* <motion.div 

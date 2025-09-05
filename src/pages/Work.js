@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaUsers, FaHandshake, FaTrophy, FaChartLine, FaLightbulb, FaHeart } from 'react-icons/fa';
+import { FaHandshake, FaTrophy, FaChartLine } from 'react-icons/fa';
 import './Work.css';
 
 const Work = () => {

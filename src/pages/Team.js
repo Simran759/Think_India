@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import LightRays from '../components/Backgrounds/LightRays/LightRays';
 import ProfileCard from '../components/Components/ProfileCard/ProfileCard';
 import './Team.css';
-import {   instagramUrl, linkedinUrl } from 'react-icons/fa';
-import { em } from 'motion/react-client';
+
+
 
 const Team = () => {
   const Faculty = [
