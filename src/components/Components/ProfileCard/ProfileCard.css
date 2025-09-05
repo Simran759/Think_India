@@ -27,7 +27,7 @@
   height: 240px;        /* Increased size */
   object-fit: cover;
   border-radius: 12px;  /* Slightly rounded corners for a square look */
-  border: 4px solid #fff;
+  border: 4px solid #C19A6B;
   box-shadow: 0 2px 12px rgba(0,0,0,0.10);
   background: #eee;
 }
@@ -47,7 +47,7 @@
 .profile-header p {
   margin: 0;
   font-size: 1.05rem;
-  color: #fbc02d;
+  color:#C19A6B;
 }
 
 .profile-footer {
@@ -82,7 +82,7 @@
 
 .status {
   font-size: 0.95rem;
-  color: #fbc02d;
+  color: #C19A6B;
   margin: 0;
 }
 
@@ -91,7 +91,7 @@
   width: 38px;
   height: 38px;
   border-radius: 12px;
-  background: #fbc02d;
+  background: #C19A6B;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,7 +101,7 @@
 
 .contact-btn:hover {
   background: #fff;
-  color: #fbc02d;
+  color: #C19A6B;
   transform: translateY(-2px);
 }
 
@@ -115,7 +115,7 @@
 .profile-about h3 {
   margin-bottom: 8px;
   font-size: 1.1rem;
-  color: #fbc02d;
+  color: #C19A6B;
 }
 
 .profile-about p {
@@ -131,7 +131,7 @@
 }
 
 .profile-social-icon {
-  color: #fbc02d;
+  color: #C19A6B;
   font-size: 2rem;
   transition: color 0.2s;
 }

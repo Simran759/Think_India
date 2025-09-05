@@ -22,7 +22,7 @@
 
 /* Mission & Vision Section */
 .mission-vision {
-  /* background: var(--light-gray); */
+  background: var(--light-gray);
 }
 
 .mission-vision-grid {
@@ -72,7 +72,7 @@
 
 /* Core Values Section */
 .core-values {
-  /* background: var(--white); */
+  background: var(--light-gray);
 }
 
 .values-grid {
@@ -123,9 +123,9 @@
 }
 
 /* Goals Section */
-/* .goals-section {
+.goals-section {
   background: var(--light-gray);
-} */
+}
 
 .goals-grid {
   display: grid;
@@ -176,9 +176,9 @@
 }
 
 /* History Section */
-/* .history-section {
-  background: var(--white);
-} */
+.history-section {
+  background: var(--light-gray);
+}
 
 .timeline {
   position: relative;

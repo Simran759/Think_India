@@ -20,10 +20,10 @@
   line-height: 1.6;
 }
 
-/* Activities Section
+/* Activities Section */
 .activities-section {
   background: var(--light-gray);
-} */
+}
 
 .activities-grid {
   display: grid;
@@ -91,10 +91,10 @@
   left: 0;
 }
 
-/* Collaborations Section
+/* /* Collaborations Section */
 .collaborations-section {
-  background: var(--white);
-} */
+  background: var(--light-gray);
+} 
 
 .collaborations-grid {
   display: grid;
@@ -144,9 +144,9 @@
 }
 
 /* Impact Section */
-/* .impact-section {
+.impact-section {
   background: var(--light-gray);
-} */
+}
 
 .impact-grid {
   display: grid;

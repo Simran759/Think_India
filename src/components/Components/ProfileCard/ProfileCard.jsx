@@ -19,7 +19,7 @@ const ProfileCard = ({
     <div className="profile-header">
       <h2>{name}</h2>
       <p>{title}</p>
-      <p>ID: {id}</p>
+      <p>{id}</p>
     </div>
     <div className="profile-socials">
       {linkedinUrl && (
@@ -33,17 +33,7 @@ const ProfileCard = ({
           <FaLinkedin />
         </a>
       )}
-      {instagramUrl && (
-        <a
-          href={instagramUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="profile-social-icon"
-          aria-label="Instagram"
-        >
-          <FaInstagram />
-        </a>
-      )}
+     
       <button className="contact-btn" onClick={onContactClick} aria-label="Contact by Email">
         <FaEnvelope />
       </button>

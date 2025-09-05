@@ -5,7 +5,14 @@
   text-align: center;
   color: var(--white);
 }
-
+.upcoming-events
+{
+  background: var(--light-gray);
+}
+.past-events
+{
+  background: var(--light-gray);
+}
 .events-hero-content h1 {
   font-size: 3.5rem;
   font-weight: 700;

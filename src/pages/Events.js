@@ -136,7 +136,7 @@ const Events = () => {
       left: 0,
       width: "100%",
       height: "100%",
-      background: "linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.8))",
+      background: "linear-gradient(90deg, rgba(0,0,0,0.4), rgba(0,0,0,0.5))",
       zIndex: 1,
     }}
   />
@@ -220,8 +220,8 @@ const Events = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-title" style={{ color: '#fbc02d', fontWeight: 700, fontSize: '2.2rem', textAlign: 'center', marginBottom: 8, letterSpacing: '-0.5px' }}>Upcoming Events</h2>
-            <p className="section-subtitle" style={{ color: '#fff', textAlign: 'center', fontSize: '1.15rem', marginBottom: 32 }}>Don't miss out on these exciting opportunities to learn, network, and grow</p>
+            <h2 className="section-title" style={{ color: '#C19A6B', fontWeight: 700, fontSize: '2.2rem', textAlign: 'center', marginBottom: 8, letterSpacing: '-0.5px' }}>Upcoming Events</h2>
+            <p className="section-subtitle" style={{ color: '#232a36', textAlign: 'center', fontSize: '1.15rem', marginBottom: 32 }}>Don't miss out on these exciting opportunities to learn, network, and grow</p>
           </motion.div>
 
           <div className="events-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: 36, marginTop: 24 }}>

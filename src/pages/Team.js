@@ -8,8 +8,8 @@ import { em } from 'motion/react-client';
 
 const Team = () => {
   const Faculty = [
-    { id: "1", name: "Sangeet Sir", position: "Faculty Advisor", image: "/team_member_pic/", linkedinUrl: "https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle" ,email:""},
-    { id: "2", name: "Jyoti Joshi Maam", position: "Faculty Advisor", image: "/team_member_pic/", linkedinUrl: "https://linkedin.com/in/yourhandle",  instagramUrl:"https://instagram.com/yourhandle",email:"" },
+    { id: "Department of Architecture", name: "Sangeeth S. Pillai Sir", position: "Faculty Advisor", image: "/team_member_pic/Sangeet Pilli.jpg", linkedinUrl: "https://www.linkedin.com/in/sangeethspillai/" ,email:"sangeeth.arch@mnit.ac.in"},
+    { id: "Department of Chemical Engineering", name: "Jyoti Joshi Ma'am", position: "Faculty Advisor", image: "/team_member_pic/Jyoti Joshi.jpg", linkedinUrl: "https://www.linkedin.com/in/jyoti-joshi-81866710a/",email:"jjoshi.city@mnit.ac.in" },
   ]
 
   const Advisors = [

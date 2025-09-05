@@ -49,7 +49,7 @@ const Work = () => {
         left: 0,
         width: "100%",
         height: "100%",
-        background: "linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.8))",
+        background: "linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0,0,0,0.5))",
         zIndex: 1,
       }}
     />
@@ -141,66 +141,6 @@ const Work = () => {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="activity-card"
-            >
-              <div className="activity-icon">
-                <FaUsers />
-              </div>
-              <h3>Leadership Development Programs</h3>
-              <p>Comprehensive leadership training workshops, mentorship programs, and skill-building sessions designed to develop the next generation of leaders.</p>
-              <ul>
-                <li>Leadership Summit (Annual)</li>
-                <li>Mentorship Program</li>
-                <li>Public Speaking Workshops</li>
-                <li>Team Building Activities</li>
-              </ul>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="activity-card"
-            >
-              <div className="activity-icon">
-                <FaLightbulb />
-              </div>
-              <h3>Technical Workshops & Hackathons</h3>
-              <p>Hands-on technical training sessions, coding competitions, and innovation challenges to foster creativity and technical skills.</p>
-              <ul>
-                <li>Tech Fest (Annual)</li>
-                <li>Hackathon Competitions</li>
-                <li>Coding Bootcamps</li>
-                <li>Innovation Challenges</li>
-              </ul>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="activity-card"
-            >
-              <div className="activity-icon">
-                <FaHeart />
-              </div>
-              <h3>Community Service Initiatives</h3>
-              <p>Social responsibility projects, volunteer programs, and community outreach activities that create positive social impact.</p>
-              <ul>
-                <li>Community Service Day</li>
-                <li>Blood Donation Camps</li>
-                <li>Environmental Awareness</li>
-                <li>Educational Outreach</li>
-              </ul>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
               className="activity-card"
@@ -211,10 +151,10 @@ const Work = () => {
               <h3>Industry Connect Programs</h3>
               <p>Partnerships with industry leaders, career development programs, and networking opportunities for students.</p>
               <ul>
-                <li>Career Fair</li>
-                <li>Industry Visits</li>
+                <li>Carrer Counselling</li>
+                <li>Workshops and Convention</li>
                 <li>Guest Lectures</li>
-                <li>Internship Programs</li>
+                <li>Internship Programs(Vidhi, Niti, Anubhooti etc.)</li>
               </ul>
             </motion.div>
 
@@ -252,96 +192,14 @@ const Work = () => {
               <p>Comprehensive skill development programs covering both technical and soft skills essential for professional growth.</p>
               <ul>
                 <li>Communication Skills</li>
-                <li>Project Management</li>
-                <li>Digital Marketing</li>
-                <li>Entrepreneurship</li>
+                <li>DIY Coding</li>
+                <li>Design Workshops</li>
+                <li>Entrepreneurship discussions</li>
               </ul>
             </motion.div>
           </div>
         </div>
       </section>
-
-      {/* Collaborations Section */}
-      <section className="section collaborations-section">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="section-title">Collaborations</h2>
-            <p className="section-subtitle">Strategic partnerships that amplify our impact and reach</p>
-          </motion.div>
-
-          <div className="collaborations-grid">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="collaboration-category"
-            >
-              <h3>Industry Partners</h3>
-              <div className="partner-list">
-                <div className="partner-item">Tech Giants & Startups</div>
-                <div className="partner-item">Consulting Firms</div>
-                <div className="partner-item">Financial Institutions</div>
-                <div className="partner-item">Manufacturing Companies</div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="collaboration-category"
-            >
-              <h3>Educational Institutions</h3>
-              <div className="partner-list">
-                <div className="partner-item">Universities & Colleges</div>
-                <div className="partner-item">Research Institutes</div>
-                <div className="partner-item">Training Centers</div>
-                <div className="partner-item">International Universities</div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="collaboration-category"
-            >
-              <h3>Government Organizations</h3>
-              <div className="partner-list">
-                <div className="partner-item">Ministry of Education</div>
-                <div className="partner-item">Skill Development Authority</div>
-                <div className="partner-item">Local Government Bodies</div>
-                <div className="partner-item">Public Sector Units</div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: true }}
-              className="collaboration-category"
-            >
-              <h3>NGOs & Social Enterprises</h3>
-              <div className="partner-list">
-                <div className="partner-item">Community Development NGOs</div>
-                <div className="partner-item">Environmental Organizations</div>
-                <div className="partner-item">Social Impact Startups</div>
-                <div className="partner-item">Charitable Foundations</div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
       {/* Impact & Achievements Section */}
       <section className="section impact-section">
         <div className="container">

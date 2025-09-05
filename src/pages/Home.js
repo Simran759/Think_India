@@ -195,17 +195,17 @@ We believe that every student carries the potential to contribute—whether thro
             <div className="timeline-center-line" style={{ width: 4, background: '#1976d2', height: '100%', minHeight: 940, margin: '0 32px', borderRadius: 2 }}></div>
             {/* Previous Events (Right) */}
             <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 32 }}>
-              <div style={{ fontWeight: 700, fontSize: '1.2rem', color: '#fbc02d', marginBottom: 16, alignSelf: 'flex-start' }}>Past Events</div>
+              <div style={{ fontWeight: 700, fontSize: '1.2rem', color: '#C19A6B', marginBottom: 16, alignSelf: 'flex-start' }}>Past Events</div>
               {/* Ganesh Chaturthi 2025 */}
               <motion.div className="timeline-event" initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.3 }} viewport={{ once: true }} style={{ width: 300, background: '#fff', borderRadius: 18, boxShadow: '0 2px 12px rgba(0,0,0,0.07)', padding: 20, marginBottom: 0, position: 'relative' }}>
-                <div style={{ color: '#fbc02d', fontWeight: 700, fontSize: '1.1rem', marginBottom: 6 }}>Ganesh Chaturthi 2025</div>
+                <div style={{ color: '#C19A6B', fontWeight: 700, fontSize: '1.1rem', marginBottom: 6 }}>Ganesh Chaturthi 2025</div>
                 <div style={{ color: '#444', fontSize: '0.98rem', marginBottom: 4 }}>26-27 August 2025, OAT, MNIT Jaipur</div>
                 <img src="/events/Ganesh_Chaturthi.JPG" alt="Ganesh Chaturthi 2025" style={{ width: '100%', maxHeight: '120px', objectFit: 'cover', borderRadius: 8, margin: '10px 0' }} />
                 <div style={{ color: '#555', fontSize: '0.97rem' }}>Students celebrated Ganesh Chaturthi with rituals, music, and cultural performances, fostering unity and devotion on campus.</div>
               </motion.div>
               {/* Youthfest 2023 */}
               <motion.div className="timeline-event" initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.4 }} viewport={{ once: true }} style={{ width: 300, background: '#fff', borderRadius: 18, boxShadow: '0 2px 12px rgba(0,0,0,0.07)', padding: 20, marginBottom: 0, position: 'relative' }}>
-                <div style={{ color: '#fbc02d', fontWeight: 700, fontSize: '1.1rem', marginBottom: 6 }}>Youthfest 2023</div>
+                <div style={{ color: '#C19A6B', fontWeight: 700, fontSize: '1.1rem', marginBottom: 6 }}>Youthfest 2023</div>
                 <div style={{ color: '#444', fontSize: '0.98rem', marginBottom: 4 }}>12-15 January 2023, MNIT Jaipur</div>
                 <img src="/events/youthfest.png" alt="Youthfest 2023" style={{ width: '100%', maxHeight: '120px', objectFit: 'cover', borderRadius: 8, margin: '10px 0' }} />
                 <div style={{ color: '#555', fontSize: '0.97rem', marginBottom: '10px' }}>Youthfest 2023 at MNIT Jaipur was a four-day festival featuring Lohri Night, Makar Sankranti, Vivekananda Jayanti, and traditional childhood games. The event brought students together for cultural celebrations, inspiring talks, and fun activities, creating lasting memories and fostering unity on campus.</div>

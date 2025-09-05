@@ -164,9 +164,9 @@
 }
 
 /* About Section */
-/* .about-section {
+.about-section {
   background: var(--light-gray);
-} */
+}
 
 .about-grid {
   display: grid;
@@ -215,7 +215,9 @@
 }
 
 /* Events Section */
-
+.events-section{
+  background: var(--light-gray);
+}
 
 .events-grid {
   display: grid;
@@ -228,7 +230,7 @@
   background: var(--white);
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(241, 232, 232, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -402,123 +404,7 @@
   left: 0;
 }
 
-/* Contact Section */
-.contact-section {
-  background: var(--light-gray);
-}
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  margin-top: 3rem;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.contact-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 1.5rem;
-  background: var(--white);
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.contact-icon {
-  font-size: 1.5rem;
-  color: var(--primary-orange);
-  margin-top: 0.25rem;
-}
-
-.contact-item h4 {
-  font-weight: 600;
-  color: var(--text-dark);
-  margin-bottom: 0.5rem;
-}
-
-.contact-item p {
-  color: var(--text-light);
-  margin-bottom: 0.25rem;
-}
-
-.social-links {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.social-link {
-  color: var(--primary-orange);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.social-link:hover {
-  color: var(--dark-orange);
-}
-
-.contact-map {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.map-placeholder {
-  background: var(--white);
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 100%;
-  max-width: 400px;
-}
-
-.map-placeholder h4 {
-  color: var(--primary-orange);
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.map-placeholder p {
-  color: var(--text-light);
-  margin-bottom: 1.5rem;
-}
-
-.map-content {
-  position: relative;
-  padding: 2rem;
-  background: var(--light-gray);
-  border-radius: 10px;
-}
-
-.map-marker {
-  width: 20px;
-  height: 20px;
-  background: var(--primary-orange);
-  border-radius: 50%;
-  margin: 0 auto 1rem;
-  position: relative;
-}
-
-.map-marker::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 15px solid var(--primary-orange);
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {

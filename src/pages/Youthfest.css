@@ -41,7 +41,13 @@
   padding-left: 0;
   text-align: left;
 }
-
+.highlights{
+  background-color: var(--light-gray);
+}
+.NotableEvents
+{
+   background-color: var(--light-gray); 
+}
 .youthfest-description {
   max-width: 700px;
   margin: 0 auto;
@@ -95,13 +101,18 @@
 
 /* Impact Section */
 .impact {
-  margin-top: 4rem;
+  background-color: var(--light-gray);
+  /* margin-top: 4rem; */
+    
 }
-
+.closing-note
+{
+   background-color: var(--light-gray);
+}
 .impact-points {
   margin-top: 1.5rem;
   font-size: 1.15rem;
-  color: #ddd;
+  color: #0c0c0c;
   line-height: 1.6;
 }
 

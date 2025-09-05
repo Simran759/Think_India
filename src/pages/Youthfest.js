@@ -47,7 +47,7 @@ const Youthfest = () => {
     {
       id: 4,
       title: "Traditional Games & Cultural Activities  ",
-      date: "January 12, 2023, January 13, 2023",
+      date: "January 13, 2023",
       location: "University Grounds",
       description: "The final day brought back the charm of childhood games like Satoliya, Kho-Kho, Tug of War, and Sack Races. Students laughed, competed, and bonded, rediscovering simple joys and teamwork. The closing ceremony featured cultural performances, where music, dance, and theatre created an atmosphere of celebration and togetherness.",
       impact: "500+ students participated",
@@ -226,7 +226,7 @@ const Youthfest = () => {
                   </section>
        
              
-             <section className="section Notable Events">
+             <section className="section NotableEvents">
                <div className="container">
                  <motion.div
                    initial={{ opacity: 0, y: 30 }}
@@ -291,7 +291,7 @@ const Youthfest = () => {
                  </div>
                </div>
              </section>
-             <section className="section impact">
+  <section className="section impact">
   <div className="container">
     <motion.div
       initial={{ opacity: 0, y: 30 }}

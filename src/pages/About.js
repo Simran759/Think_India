@@ -49,7 +49,7 @@ const About = () => {
         left: 0,
         width: "100%",
         height: "100%",
-        background: "linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.8))",
+        background: "linear-gradient(90deg, rgba(0,0,0,0.4), rgba(0,0,0,0.5))",
         zIndex: 1,
       }}
     />
@@ -369,7 +369,7 @@ const About = () => {
           <div className="timeline">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: -10 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
               className="timeline-item"
@@ -383,7 +383,7 @@ const About = () => {
 
             <motion.div
               initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: 10}}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
               className="timeline-item"
@@ -397,7 +397,7 @@ const About = () => {
 
             <motion.div
               initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: -10}}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
               className="timeline-item"
@@ -411,7 +411,7 @@ const About = () => {
 
             <motion.div
               initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: 10 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
               className="timeline-item"
@@ -425,7 +425,7 @@ const About = () => {
 
             <motion.div
               initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: -10 }}
               transition={{ duration: 0.6, delay: 0.5 }}
               viewport={{ once: true }}
               className="timeline-item"

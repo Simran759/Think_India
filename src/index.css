@@ -7,16 +7,17 @@
 }
 
 :root {
-  --primary-orange: #FF8D21;
-  --secondary-orange: #FFA652;
-  --accent-yellow: #FFD93D;
-  --light-yellow: #FFF3B0;
-  --dark-orange: #FFAB5D;
-  --white: #FFFFFF;
-  --light-gray: #F8F9FA;
-  --dark-gray: #343A40;
-  --text-dark: #2C3E50;
-  --text-light: #6C757D;
+   --primary-orange: #C19A6B;   /* Warm beige/brown accent */
+  --secondary-orange: #B08B65; /* Slightly deeper beige */
+  --accent-yellow: #D9C9A3;    /* Soft sand yellow */
+  --light-yellow: #F5F2E7;     /* Cream background */
+  --dark-orange: #8C7B58;      /* Muted olive/brown */
+  --white: #FFFFFF;            /* Pure white */
+  --light-gray: #F1F1F1;       /* Soft light gray */
+  --dark-gray: #4A4A4A;        /* Neutral dark gray */
+  --text-dark: #2C2C2C;        /* Deep charcoal for titles */
+  --text-light: #6C6C6C;       /* Muted gray for body text */
+
 
   /* Typography scale */
   --base-font-size: 1rem;   /* 16px default */
