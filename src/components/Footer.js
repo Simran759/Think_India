@@ -14,16 +14,16 @@ const Footer = () => {
               <p>Empowering students to think, innovate, and lead.</p>
             </div>
             <div className="social-links">
-              <a href="#" className="social-link" aria-label="Facebook">
+              {/* <a href="#" className="social-link" aria-label="Facebook">
                 <FaFacebook />
               </a>
               <a href="#" className="social-link" aria-label="Twitter">
                 <FaTwitter />
-              </a>
-              <a href="#" className="social-link" aria-label="Instagram">
+              </a> */}
+              <a href="https://www.instagram.com/thinkindiamnit/" className="social-link" aria-label="Instagram">
                 <FaInstagram />
               </a>
-              <a href="#" className="social-link" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/thinkindiaorg/" className="social-link" aria-label="LinkedIn">
                 <FaLinkedin />
               </a>
             </div>
@@ -37,7 +37,7 @@ const Footer = () => {
               <li><Link to="/events">Events</Link></li>
               <li><Link to="/team">Our Team</Link></li>
               <li><Link to="/work">Our Work</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+              
             </ul>
           </div>
 
@@ -46,11 +46,11 @@ const Footer = () => {
             <div className="contact-info">
               <div className="contact-item">
                 <FaEnvelope />
-                <span>info@thinkindia.org</span>
+                <span>thinkindiamnit@gmail.com</span>
               </div>
               <div className="contact-item">
                 <FaPhone />
-                <span>+91 98765 43210</span>
+                <span>+91 9050470760</span>
               </div>
             </div>
           </div>
@@ -65,15 +65,22 @@ const Footer = () => {
           </div> */}
         </div>
 
-        <div className="footer-bottom">
-          <div className="footer-bottom-content">
-            <p>&copy; 2024 Think India. All rights reserved.</p>
-            <div className="footer-bottom-links">
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Service</a>
-            </div>
-          </div>
-        </div>
+       <div className="footer-bottom">
+  <div className="footer-bottom-content">
+    <p>&copy; 2025 Think India MNIT. All rights reserved.</p>
+    <p>
+      To know more about Think India at National level visit : { ""}
+      <a href="https://www.thinkindiaorg.in/" style={{ color: "white" }}>
+        Think India
+      </a>{" "}
+      |{" "}
+      <a href="https://www.abvp.org/think-india" style={{ color: "white" }}>
+        Abvp
+      </a>
+    </p>
+  </div>
+</div>
+
       </div>
     </footer>
   );

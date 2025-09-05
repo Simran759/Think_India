@@ -30,3 +30,8 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--dark-orange);
 } 
+.App {
+  background: #0a0a1f; /* or any color/gradient you want */
+  /* For a gradient: */
+  /* background: radial-gradient(circle at top, #0a0a1f, #000000); */
+}

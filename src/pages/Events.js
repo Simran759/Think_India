@@ -4,137 +4,333 @@ import { FaCalendarAlt, FaMapMarkerAlt, FaClock, FaUsers } from 'react-icons/fa'
 import './Events.css';
 
 const Events = () => {
+  // Slideshow images for Our Events
+  const slideshowImages = [
+    '/photos/hcverma.jpg',
+    '/events/satoliya.png',
+    '/events/discoverhunt.png',
+  ];
+  const [slideIndex, setSlideIndex] = React.useState(0);
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setSlideIndex((prev) => (prev + 1) % slideshowImages.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, [slideshowImages.length]);
   const upcomingEvents = [
-    {
+        {
       id: 1,
-      title: "Leadership Summit 2024",
-      date: "March 15-17, 2024",
+      title: "Choti Diwali – Donation Drive",
+      date: "October 2025",
       time: "9:00 AM - 6:00 PM",
-      location: "Main Campus Auditorium",
-      description: "A three-day intensive leadership development program featuring workshops, keynote speakers, and networking opportunities.",
+      location: "College Main Gate, OAT, Hostel Lobbies",
+      description: "A meaningful initiative to collect clothes, books, food items, and stationery, spreading light and hope beyond campus walls.",
       participants: "200+",
-      image: "https://via.placeholder.com/400x250/FF6B35/FFFFFF?text=Leadership+Summit"
+  image: "/events/Donation_drive.jpg"
     },
+  
+
+
     {
       id: 2,
-      title: "Innovation Workshop",
-      date: "March 25, 2024",
-      time: "2:00 PM - 5:00 PM",
-      location: "Innovation Lab",
-      description: "Hands-on workshop focused on design thinking and innovation methodologies for solving real-world problems.",
+      title: " Badi Diwali – Ethnic Dress Competition",
+      date: "October 2025",
+      time: "7:30 PM – 9:30 PM",
+      location: "OAT Main Stage",
+      description: "A cultural walk celebrating India’s diversity through traditional attire. Judged on creativity, cultural authenticity, confidence, and presentation.",
       participants: "50",
-      image: "https://via.placeholder.com/400x250/FF8C42/FFFFFF?text=Innovation+Workshop"
+  image: "/events/ethinc_wear.jpg"
     },
+  
     {
       id: 3,
-      title: "Tech Fest 2024",
-      date: "April 10-12, 2024",
+      title: " November Technical Workshop",
+      date: "1–6 November 2025",
       time: "10:00 AM - 8:00 PM",
-      location: "Engineering Block",
-      description: "Annual technology festival featuring hackathons, tech talks, and project showcases.",
-      participants: "500+",
-      image: "https://via.placeholder.com/400x250/FFD93D/000000?text=Tech+Fest"
+      location: "VLTC Classrooms",
+      description: "A knowledge-driven workshop featuring expert speakers on cutting-edge topics like Web Development, AI, and Machine Learning. Students gain practical, real-world insights.",
+      participants: "75+",
+  image: "/events/technical.jpeg"
     }
   ];
 
   const pastEvents = [
-    {
-      id: 1,
-      title: "Community Service Day",
-      date: "December 15, 2023",
-      location: "Local Community Centers",
-      description: "Successfully organized community service activities impacting 1000+ lives through various initiatives.",
-      impact: "1000+ lives impacted",
-      image: "https://via.placeholder.com/400x250/FF6B35/FFFFFF?text=Community+Service"
-    },
+      {id:1,
+    title:"Ganesh Chaturthi Celebration",
+    date: "27-28 August, 2025",
+    location:"Mnit Oat ",
+    description:"The day began with a vibrant procession of Lord Ganesha from Prabha Marg Circle to the Open Air Theatre, filled with dhol-tasha beats, chants of “Ganpati Bappa Morya!”, and energetic student participation. At OAT, celebrations included a dance performance by Level X, Maha Puja and installation, soulful aarti with prasad, and an evening aarti with large student gatherings. With overwhelming participation from students and faculty, the event became a festival of unity, devotion, and cultural harmony, concluding with heartfelt chants as MNIT Jaipur bid farewell to Bappa."
+   ,
+      impact: "500+ students attended , 100+ faculty members , Director Sir and Deans graced the event", 
+  image: "/events/Ganesh_Chaturthi.jpg"
+  },
     {
       id: 2,
-      title: "Career Fair 2023",
-      date: "November 20, 2023",
+      title: " Discover India – The Puzzle Hunt",
+      date: " February 7, 2025 ",
+      location: "VLTC L-008, MNIT Jaipur ",
+      description: "As part of the Blitz events, Think India MNIT organized an exciting puzzle-based treasure hunt, where teams raced to solve riddles, collect pieces, and complete the map of India. The event brilliantly combined logical reasoning, speed, and cultural awareness in a lively competitive spirit.Participants showcased their problem-solving skills while engaging in an intense yet fun-filled race across departments. The creative format and energetic atmosphere made the event a memorable experience, receiving immense appreciation from all."
+      ,impact: "250+ people participated ",
+  image: "/events/discoverhunt.png"
+    },
+     {
+      id: 3,
+      title: " Tug of War ",
+      date: "January 12, 2025",
       location: "University Grounds",
-      description: "Connected 300+ students with 50+ companies for internship and job opportunities.",
-      impact: "300+ students placed",
-      image: "https://via.placeholder.com/400x250/FF8C42/FFFFFF?text=Career+Fair"
+      description: "The Tug of War event at Youth Fest 2025 witnessed an electrifying atmosphere as 18 teams battled it out in high-energy knockout rounds. The roaring crowds amplified the thrill of each match, making the competition even more intense. The final showdown between Purwanchal ke Sher and Danav kept everyone on the edge of their seats, with Purwanchal ke Sher emerging as the ultimate champions."
+  , impact: "15+ teams participated",
+      image: "/events/Tug_of_war.png"
     },
     {
-      id: 3,
-      title: "Cultural Fest",
-      date: "October 5-7, 2023",
-      location: "Cultural Center",
-      description: "Three-day cultural celebration showcasing diverse talents and promoting cultural exchange.",
-      impact: "800+ participants",
-      image: "https://via.placeholder.com/400x250/FFD93D/000000?text=Cultural+Fest"
-    }
+      id: 4,
+      title: "Satoliya - Reliving Childhood Games ",
+      date: "January 12, 2025",
+      location: "University Grounds",
+      description: "Satoliya 2025 brought back the charm of the traditional game Seven Stones. With 15+ teams battling it out through rounds, semis, and the grand finale, the event turned into a perfect mix of nostalgia and competition. Students from across departments showcased strategy, teamwork, and sportsmanship, making Satoliya one of the most fun and loved highlights of YouthFest 2024.",
+      impact: "15+ teams participated",
+  image: "/events/satoliya.png"
+    },
+    
+  { id: 5, 
+    title: "Ace Your Career in Civil Services – A Power-Packed UPSC Seminar", 
+    date: "April 8, 2025 ", 
+    location: "APJ Abdul Kalam Hall, VLTC, MNIT Jaipur ", 
+ description: "Think India MNIT organized an impactful seminar featuring Mr. Sunil Oberoi (Ex-IAS, Former UPSC Examiner) and Mr. Kapil Jain (Vajiram & Ravi IAS), bringing invaluable guidance to aspiring civil servants. The session provided insider insights and mentorship for UPSC preparation.At the seminar, the speakers shared inspiring journeys, highlighted effective preparation methods, and engaged in an interactive Q&A session. The event also created meaningful networking opportunities for aspirants.With the hall brimming with enthusiastic participants, the seminar emerged as a resounding success, leaving students motivated and better equipped to pursue their UPSC dreams.",
+
+    impact: "250+ students benefited", 
+  image: "/events/civilservices.jpg.png" },
+
+    
   ];
 
   return (
-    <div className="events-page">
-      {/* Hero Section */}
-      <section className="events-hero">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="events-hero-content"
-          >
-            <h1>Our Events</h1>
-            <p>Join us in our exciting events and activities that bring together students, professionals, and community leaders.</p>
-          </motion.div>
-        </div>
-      </section>
+  <div className="events-page" style={{ background: 'linear-gradient(135deg, #0a0a1f  )', color: '#fff', minHeight: '100vh' }}>
+    {/* Hero Section */}
+<section style={{ position: "relative", width: "100%", height: "730px", overflow: "hidden" }}>
+  {/* Slide background */}
+  <motion.div
+    key={slideIndex} // important for fade animation
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 1 }}
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      backgroundImage: `url(${slideshowImages[slideIndex]})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      filter: "brightness(0.8)",
+    }}
+  />
+
+  {/* Overlay */}
+  <div
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      background: "linear-gradient(90deg, rgba(0,0,0,0.4), rgba(0,0,0,0.5))",
+      zIndex: 1,
+    }}
+  />
+
+  {/* Hero Text */}
+  <div
+    style={{
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      textAlign: "center",
+      zIndex: 2,
+      color: "#fff",
+      padding: "0 20px",
+      maxWidth: 700,
+    }}
+  >
+       <motion.h4
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      style={{
+        fontSize: window.innerWidth <= 500 ? "3rem" : "4rem", // ✅ smaller size on phones
+        fontWeight: 600,
+        marginBottom: 19,
+        whiteSpace: "nowrap", // ✅ keep in one line
+      }}
+    >
+      Our Events
+    </motion.h4>
+    <motion.h2
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 0.2 }}
+      style={{ fontSize: "1.2rem", color: "#d0d0d0", fontWeight: 500 }}
+    >
+      Join us in our exciting events and activities that bring together students,
+      professionals, and community leaders.
+    </motion.h2>
+  </div>
+
+  {/* Dots */}
+  <div
+    style={{
+      position: "absolute",
+      bottom: 20,
+      left: "50%",
+      transform: "translateX(-50%)",
+      display: "flex",
+      gap: 12,
+      zIndex: 2,
+    }}
+  >
+    {slideshowImages.map((_, idx) => (
+          <span
+            key={idx}
+            style={{
+              width: 14,
+              height: 14,
+              borderRadius: "50%", // <-- Make dot a circle
+              background: idx === slideIndex ? "#fbc02d" : "#fff",
+              opacity: idx === slideIndex ? 1 : 0.5,
+              border: idx === slideIndex ? "2px solid #fff" : "2px solid #fbc02d",
+              transition: "all 0.3s",
+              display: "inline-block", // Ensure it's inline-block
+              margin: "0 0px", // Optional: add spacing between dots
+            }}
+      />
+    ))}
+  </div>
+</section>
+
 
       {/* Upcoming Events Section */}
       <section className="section upcoming-events">
-        <div className="container">
+        <div className="container" style={{ maxWidth: 1200, margin: '0 auto' }}>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="section-title">Upcoming Events</h2>
-            <p className="section-subtitle">Don't miss out on these exciting opportunities to learn, network, and grow</p>
+            <h2 className="section-title" style={{ color: '#C19A6B', fontWeight: 700, fontSize: '2.2rem', textAlign: 'center', marginBottom: 8, letterSpacing: '-0.5px' }}>Upcoming Events</h2>
+            <p className="section-subtitle" style={{ color: '#232a36', textAlign: 'center', fontSize: '1.15rem', marginBottom: 32 }}>Don't miss out on these exciting opportunities to learn, network, and grow</p>
           </motion.div>
 
-          <div className="events-grid">
+          <div className="events-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: 36, marginTop: 24 }}>
             {upcomingEvents.map((event, index) => (
-              <motion.div
-                key={event.id}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="event-card"
-              >
-                <div className="event-image">
-                  <img src={event.image} alt={event.title} />
-                  <div className="event-badge">Upcoming</div>
-                </div>
-                <div className="event-content">
-                  <h3>{event.title}</h3>
-                  <div className="event-details">
-                    <div className="event-detail">
-                      <FaCalendarAlt />
-                      <span>{event.date}</span>
-                    </div>
-                    <div className="event-detail">
-                      <FaClock />
-                      <span>{event.time}</span>
-                    </div>
-                    <div className="event-detail">
-                      <FaMapMarkerAlt />
-                      <span>{event.location}</span>
-                    </div>
-                    <div className="event-detail">
-                      <FaUsers />
-                      <span>{event.participants} participants</span>
-                    </div>
-                  </div>
-                  <p>{event.description}</p>
-                  <button className="btn btn-primary">Register Now</button>
-                </div>
-              </motion.div>
+             <motion.div
+  key={event.id}
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: index * 0.1 }}
+  viewport={{ once: true }}
+  className="event-card upcoming"
+>
+  <div
+    className="event-image"
+    style={{
+      position: 'relative',
+      width: '100%',
+      height: '320px',
+      borderRadius: '18px 18px 0 0',
+      overflow: 'hidden',
+      boxShadow: '0 4px 24px rgba(0,0,0,0.10)',
+    }}
+  >
+    <img
+      src={event.image}
+      alt={event.title}
+      style={{
+        width: '100%',
+        height: '100%',
+        objectFit: 'cover',
+        objectPosition: 'center',
+        transition: 'transform 0.3s',
+        filter: 'brightness(0.92)',
+      }}
+    />
+    <div
+      style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        background:
+          'linear-gradient(180deg,rgba(0,0,0,0.18) 40%,rgba(0,0,0,0.45) 100%)',
+        zIndex: 1,
+      }}
+    ></div>
+    <div
+      style={{
+        position: 'absolute',
+        bottom: 18,
+        left: 18,
+        color: '#fff',
+        zIndex: 2,
+        fontWeight: 600,
+        fontSize: '1.25rem',
+        textShadow: '0 2px 8px rgba(0,0,0,0.25)',
+      }}
+    >
+      {event.title}
+    </div>
+  </div>
+
+  <div
+    className="event-content"
+    style={{
+      background: '#fff',
+      borderRadius: '0 0 18px 18px',
+      boxShadow: '0 2px 12px rgba(0,0,0,0.04)',
+      padding: '24px 20px 18px 20px',
+      marginTop: '-8px',
+      position: 'relative',
+      zIndex: 2,
+    }}
+  >
+    <div
+      className="event-details"
+      style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        gap: '18px 32px',
+        marginBottom: '10px',
+        color: '#333',
+        fontSize: '1rem',
+      }}
+    >
+      <div className="event-detail" style={{ display: 'flex', alignItems: 'center', gap: '7px' }}>
+        <FaCalendarAlt style={{ color: '#1976d2' }} />
+        <span>{event.date}</span>
+      </div>
+      <div className="event-detail" style={{ display: 'flex', alignItems: 'center', gap: '7px' }}>
+        <FaClock style={{ color: '#1976d2' }} />
+        <span>{event.time}</span>
+      </div>
+      <div className="event-detail" style={{ display: 'flex', alignItems: 'center', gap: '7px' }}>
+        <FaMapMarkerAlt style={{ color: '#1976d2' }} />
+        <span>{event.location}</span>
+      </div>
+      <div className="event-detail" style={{ display: 'flex', alignItems: 'center', gap: '7px' }}>
+        <FaUsers style={{ color: '#1976d2' }} />
+        <span>{event.participants} participants</span>
+      </div>
+    </div>
+    <p style={{ color: '#444', fontSize: '1.05rem', marginBottom: 0 }}>
+      {event.description}
+    </p>
+  </div>
+</motion.div>
+
             ))}
           </div>
         </div>
@@ -163,28 +359,33 @@ const Events = () => {
                 viewport={{ once: true }}
                 className="event-card past"
               >
-                <div className="event-image">
-                  <img src={event.image} alt={event.title} />
-                  <div className="event-badge completed">Completed</div>
+                <div className="event-image" style={{ position: 'relative', width: '100%', height: '320px', borderRadius: '18px 18px 0 0', overflow: 'hidden', boxShadow: '0 4px 24px rgba(0,0,0,0.10)' }}>
+                  <img 
+                    src={event.image} 
+                    alt={event.title} 
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', transition: 'transform 0.3s', filter: 'brightness(0.92)' }} 
+                  />
+                  <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'linear-gradient(180deg,rgba(0,0,0,0.18) 40%,rgba(0,0,0,0.45) 100%)', zIndex: 1 }}></div>
+                  {/* Removed Completed badge */}
+                  <div style={{ position: 'absolute', bottom: 18, left: 18, color: '#fff', zIndex: 2, fontWeight: 600, fontSize: '1.25rem', textShadow: '0 2px 8px rgba(0,0,0,0.25)' }}>{event.title}</div>
                 </div>
-                <div className="event-content">
-                  <h3>{event.title}</h3>
-                  <div className="event-details">
-                    <div className="event-detail">
-                      <FaCalendarAlt />
+                <div className="event-content" style={{ background: '#fff', borderRadius: '0 0 18px 18px', boxShadow: '0 2px 12px rgba(0,0,0,0.04)', padding: '24px 20px 18px 20px', marginTop: '-8px', position: 'relative', zIndex: 2 }}>
+                  <div className="event-details" style={{ display: 'flex', flexWrap: 'wrap', gap: '18px 32px', marginBottom: '10px', color: '#333', fontSize: '1rem' }}>
+                    <div className="event-detail" style={{ display: 'flex', alignItems: 'center', gap: '7px' }}>
+                      <FaCalendarAlt style={{ color: '#1976d2' }} />
                       <span>{event.date}</span>
                     </div>
-                    <div className="event-detail">
-                      <FaMapMarkerAlt />
+                    <div className="event-detail" style={{ display: 'flex', alignItems: 'center', gap: '7px' }}>
+                      <FaMapMarkerAlt style={{ color: '#1976d2' }} />
                       <span>{event.location}</span>
                     </div>
-                    <div className="event-detail">
-                      <FaUsers />
+                    <div className="event-detail" style={{ display: 'flex', alignItems: 'center', gap: '7px' }}>
+                      <FaUsers style={{ color: '#1976d2' }} />
                       <span>{event.impact}</span>
                     </div>
                   </div>
-                  <p>{event.description}</p>
-                  <button className="btn btn-secondary">View Gallery</button>
+                  <p style={{ color: '#444', fontSize: '1.05rem', marginBottom: 0 }}>{event.description}</p>
+                  {/* <button className="btn btn-secondary">View Gallery</button> */}
                 </div>
               </motion.div>
             ))}
@@ -192,49 +393,6 @@ const Events = () => {
         </div>
       </section>
 
-      {/* Event Calendar Section */}
-      <section className="section event-calendar">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="section-title">Event Calendar</h2>
-            <p className="section-subtitle">Stay updated with our upcoming events and activities</p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="calendar-placeholder"
-          >
-            <div className="calendar-content">
-              <h3>Interactive Event Calendar</h3>
-              <p>View all our upcoming events, workshops, and activities in one place.</p>
-              <div className="calendar-grid">
-                <div className="calendar-month">
-                  <h4>March 2024</h4>
-                  <div className="calendar-days">
-                    <div className="calendar-day event-day">15-17</div>
-                    <div className="calendar-day event-day">25</div>
-                  </div>
-                </div>
-                <div className="calendar-month">
-                  <h4>April 2024</h4>
-                  <div className="calendar-days">
-                    <div className="calendar-day event-day">10-12</div>
-                  </div>
-                </div>
-              </div>
-              <button className="btn btn-primary">View Full Calendar</button>
-            </div>
-          </motion.div>
-        </div>
-      </section>
     </div>
   );
 };

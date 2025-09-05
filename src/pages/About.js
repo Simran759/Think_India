@@ -4,22 +4,123 @@ import { FaLightbulb, FaTrophy, FaHandshake, FaUsers, FaChartLine, FaHeart } fro
 import './About.css';
 
 const About = () => {
+   const slideshowImages = [
+      '/photos/iit_kanpur_workshop.png',
+      // '/photos/roorkee.jpg',
+      '/photos/convention.jpg',
+    ];
+    const [slideIndex, setSlideIndex] = React.useState(0);
+    React.useEffect(() => {
+      const interval = setInterval(() => {
+        setSlideIndex((prev) => (prev + 1) % slideshowImages.length);
+      }, 2500);
+      return () => clearInterval(interval);
+    }, [slideshowImages.length]);
   return (
-    <div className="about-page">
+  <div className="about-page" style={{ backgroundColor: '#0a0a1f', color: '#fff', minHeight: '100vh' }}>
+
       {/* Hero Section */}
-      <section className="about-hero">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
+  <section style={{ position: "relative", width: "100%", height: "730px", overflow: "hidden" }}>
+    {/* Slide background */}
+    <motion.div
+      key={slideIndex} // important for fade animation
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        backgroundImage: `url(${slideshowImages[slideIndex]})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        filter: "brightness(0.8)",
+      }}
+    />
+  
+    {/* Overlay */}
+    <div
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        background: "linear-gradient(90deg, rgba(0,0,0,0.4), rgba(0,0,0,0.5))",
+        zIndex: 1,
+      }}
+    />
+    {/* Hero Text */}
+      <div
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          textAlign: "center",
+          zIndex: 2,
+          color: "#fff",
+          padding: "0 20px",
+          maxWidth: 700,
+        }}
+      >
+          <motion.h4
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="about-hero-content"
+            style={{
+              fontSize: window.innerWidth <= 500 ? "2.2rem" : "3.2rem",
+              fontWeight: 600,
+              marginBottom: 8,
+              whiteSpace: "nowrap",
+              // lineHeight: 1.1,
+            }}
           >
-            <h1>About Think India</h1>
-            <p>Empowering the next generation of leaders through innovation, collaboration, and social responsibility.</p>
-          </motion.div>
-        </div>
-      </section>
+            About Think India
+          </motion.h4>
+        <motion.h2
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          style={{ fontSize: "1.2rem", color: "#d0d0d0", fontWeight: 500 }}
+        >
+          Empowering the next generation of leaders through innovation, collaboration, and social responsibility.
+        </motion.h2>
+      </div>
+    
+      {/* Dots */}
+      <div
+        style={{
+          position: "absolute",
+          bottom: 20,
+          left: "50%",
+          transform: "translateX(-50%)",
+          display: "inline-block",
+          gap: 12,
+          zIndex: 2,
+        }}
+      >
+        {slideshowImages.map((_, idx) => (
+          <span
+            key={idx}
+            style={{
+              width: 14,
+              height: 14,
+              borderRadius: "50%", // <-- Make dot a circle
+              background: idx === slideIndex ? "#fbc02d" : "#fff",
+              opacity: idx === slideIndex ? 1 : 0.5,
+              border: idx === slideIndex ? "2px solid #fff" : "2px solid #fbc02d",
+              transition: "all 0.3s",
+              display: "inline-block", // Ensure it's inline-block
+              margin: "0 5px", // Optional: add spacing between dots
+            }}
+          />
+        ))}
+      </div>
+    </section>
 
       {/* Mission & Vision Section */}
       <section className="section mission-vision">
@@ -36,7 +137,11 @@ const About = () => {
                 <FaLightbulb />
               </div>
               <h2>Our Mission</h2>
-              <p>To inspire and empower students to become proactive leaders who contribute positively to society through innovative thinking and collaborative action. We strive to create a platform where young minds can develop their potential, connect with like-minded individuals, and make a meaningful impact on their communities.</p>
+              <ul style={{ paddingLeft: 18, margin: 0, color: "rgb(137, 132, 132)", textAlign: 'left' }}>
+                  <li>To provide students with exposure through internships, workshops, and social initiatives.</li>
+                  <li>To nurture a culture of critical thinking, dialogue, and collaboration on campus.</li>
+                  <li>To align student potential with the broader vision of nation-building and global leadership.</li>
+                </ul>
             </motion.div>
 
             <motion.div
@@ -50,7 +155,9 @@ const About = () => {
                 <FaTrophy />
               </div>
               <h2>Our Vision</h2>
-              <p>To be the leading student organization that shapes future leaders and creates positive social impact through education, collaboration, and community service. We envision a world where every student has the opportunity to develop their leadership potential and contribute to building a better society.</p>
+              <p>
+                Our vision is to nurture leaders at MNIT Jaipur who are innovative, socially responsible, and committed to a self-reliant, progressive Bharat. We empower students to think critically, act ethically, and collaborate for positive change, inspiring them to become changemakers who contribute to society and the nation’s future.
+              </p>
             </motion.div>
           </div>
         </div>
@@ -81,7 +188,7 @@ const About = () => {
                 <FaUsers />
               </div>
               <h3>Leadership</h3>
-              <p>We believe in developing strong, ethical leaders who can inspire and guide others towards positive change.</p>
+              <p>Cultivating ethical leaders who inspire change.</p>
             </motion.div>
 
             <motion.div
@@ -95,7 +202,7 @@ const About = () => {
                 <FaLightbulb />
               </div>
               <h3>Innovation</h3>
-              <p>We encourage creative thinking and innovative solutions to address complex challenges in our society.</p>
+              <p>Cultivating ethical leaders who inspire change.</p>
             </motion.div>
 
             <motion.div
@@ -109,7 +216,7 @@ const About = () => {
                 <FaHandshake />
               </div>
               <h3>Collaboration</h3>
-              <p>We foster partnerships and teamwork, believing that collective effort leads to greater impact and success.</p>
+              <p>Building strong partnerships and teamwork.</p>
             </motion.div>
 
             <motion.div
@@ -123,7 +230,7 @@ const About = () => {
                 <FaHeart />
               </div>
               <h3>Social Responsibility</h3>
-              <p>We are committed to making a positive difference in our communities through service and ethical practices.</p>
+              <p>– Serving communities with empathy and impact.</p>
             </motion.div>
 
             <motion.div
@@ -137,7 +244,7 @@ const About = () => {
                 <FaChartLine />
               </div>
               <h3>Excellence</h3>
-              <p>We strive for excellence in everything we do, maintaining high standards and continuous improvement.</p>
+              <p>Striving for continuous improvement and high standards.</p>
             </motion.div>
 
             <motion.div
@@ -151,7 +258,7 @@ const About = () => {
                 <FaTrophy />
               </div>
               <h3>Integrity</h3>
-              <p>We conduct ourselves with honesty, transparency, and ethical behavior in all our interactions and activities.</p>
+              <p>Acting with honesty, transparency, and ethics.</p>
             </motion.div>
           </div>
         </div>
@@ -180,7 +287,7 @@ const About = () => {
             >
               <div className="goal-number">01</div>
               <h3>Leadership Development</h3>
-              <p>Develop leadership skills and qualities in students through workshops, training programs, and hands-on experiences.</p>
+              <p>Build leadership skills through workshops, training, and hands-on experiences.</p>
             </motion.div>
 
             <motion.div
@@ -192,7 +299,7 @@ const About = () => {
             >
               <div className="goal-number">02</div>
               <h3>Social Awareness</h3>
-              <p>Promote social awareness and responsibility through community service projects and educational initiatives.</p>
+              <p>Drive initiatives that promote responsibility and service.</p>
             </motion.div>
 
             <motion.div
@@ -204,7 +311,7 @@ const About = () => {
             >
               <div className="goal-number">03</div>
               <h3>Networking Opportunities</h3>
-              <p>Create networking opportunities with industry professionals, alumni, and other student organizations.</p>
+              <p>Connect students with industry leaders, alumni, and peers.</p>
             </motion.div>
 
             <motion.div
@@ -216,7 +323,7 @@ const About = () => {
             >
               <div className="goal-number">04</div>
               <h3>Innovation & Entrepreneurship</h3>
-              <p>Foster a culture of innovation and entrepreneurship through hackathons, startup competitions, and mentorship programs.</p>
+              <p>Connect students with industry leaders, alumni, and peers.</p>
             </motion.div>
 
             <motion.div
@@ -228,7 +335,7 @@ const About = () => {
             >
               <div className="goal-number">05</div>
               <h3>Cultural Exchange</h3>
-              <p>Promote cultural exchange and diversity through events, workshops, and collaborative projects with international organizations.</p>
+              <p>Foster diversity and understanding through cultural and international collaborations.</p>
             </motion.div>
 
             <motion.div
@@ -240,7 +347,7 @@ const About = () => {
             >
               <div className="goal-number">06</div>
               <h3>Skill Enhancement</h3>
-              <p>Enhance technical and soft skills through workshops, training sessions, and practical learning experiences.</p>
+              <p>Provide technical and soft skill development through training and practice.</p>
             </motion.div>
           </div>
         </div>
@@ -262,7 +369,7 @@ const About = () => {
           <div className="timeline">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: -10 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
               className="timeline-item"
@@ -270,27 +377,27 @@ const About = () => {
               <div className="timeline-content">
                 <div className="timeline-year">2020</div>
                 <h3>Foundation</h3>
-                <p>Think India was founded with a vision to empower students and create positive social impact through leadership development.</p>
+                <p>Think India MNIT was founded with a vision to empower students and create positive social impact.</p>
               </div>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: 10}}
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
               className="timeline-item"
             >
               <div className="timeline-content">
                 <div className="timeline-year">2021</div>
-                <h3>First Major Event</h3>
-                <p>Successfully organized our first leadership summit with 200+ participants, marking the beginning of our impactful journey.</p>
+                <h3>First Milestone</h3>
+                <p>Organized the first Leadership Summit with 200+ participants, kickstarting our journey.</p>
               </div>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: -10}}
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
               className="timeline-item"
@@ -298,13 +405,13 @@ const About = () => {
               <div className="timeline-content">
                 <div className="timeline-year">2022</div>
                 <h3>Expansion</h3>
-                <p>Expanded to multiple campuses and established partnerships with industry leaders and educational institutions.</p>
+                <p>Grew across multiple campuses, partnering with educational institutions and industry leaders.</p>
               </div>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: 10 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
               className="timeline-item"
@@ -312,13 +419,13 @@ const About = () => {
               <div className="timeline-content">
                 <div className="timeline-year">2023</div>
                 <h3>Recognition</h3>
-                <p>Received multiple awards and recognitions for our contributions to student development and community service.</p>
+                <p>Earned awards for contributions to student development and community service.</p>
               </div>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: -10 }}
               transition={{ duration: 0.6, delay: 0.5 }}
               viewport={{ once: true }}
               className="timeline-item"
@@ -326,7 +433,7 @@ const About = () => {
               <div className="timeline-content">
                 <div className="timeline-year">2024</div>
                 <h3>Future Forward</h3>
-                <p>Continuing to innovate and expand our reach, with plans for international collaborations and digital transformation.</p>
+                <p>Expanding globally with international collaborations and digital initiatives.</p>
               </div>
             </motion.div>
           </div>
@@ -336,4 +443,4 @@ const About = () => {
   );
 };
 
-export default About; 
+export default About;

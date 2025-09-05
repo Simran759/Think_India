@@ -1,4 +1,4 @@
-/* Team Hero Section */
+Team Hero Section
 .team-hero {
   background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
   padding: 120px 0 80px;
@@ -23,10 +23,12 @@
 /* Team Grid */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* reduced min width for tighter fit */
+  column-gap: 1rem;  /* smaller horizontal gap */
+  row-gap: 2rem;     /* keep vertical spacing spacious */
   margin-top: 3rem;
 }
+
 
 .team-member-card {
   background: var(--white);
