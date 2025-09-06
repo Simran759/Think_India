@@ -34,6 +34,7 @@ const Team = () => {
         { id: "2023UCH1395", name: "Shreya Meena", position: "Content Writing", image: "/team_member_pic/Rabita Meena.jpg",  linkedinUrl:"https://www.linkedin.com/in/shreya-meena-385287377/",  instagramUrl:"https://www.instagram.com/the_life_of_enterpreneur/",email:"2023uch1395@mnit.ac.in" },
       { id: "2023UCH1265", name: "Vedant Sharma", position: "Editing", image: "/team_member_pic/Vedant Sharma.jpg",  linkedinUrl:"https://www.linkedin.com/in/vedant-sharma444/",  instagramUrl:"https://www.instagram.com/vedant_sharma444?igsh=aHV1djRqYTd6NXEz",email:"2023uch1265@mnit.ac.in" },
       { id: "2023UMT1948", name: "Samrat Rai", position: "Design", image: "/team_member_pic/SAMRAT RAI.jpg",  linkedinUrl:"https://www.linkedin.com/in/samrat-rai-2407b22b1/",  instagramUrl:"https://www.instagram.com/dhanushchandra2006/",email:"2023umt1948@mnit.ac.in" },
+           { id: "2023UCE1063", name: "Aastha Priyanshu", position: "Decor", image: "/team_member_pic/Aastha.jpg",  linkedinUrl:"https://www.linkedin.com/in/aastha-priyanshu-57a3022b4/",  instagramUrl:"https://www.instagram.com/",email:"2023uce1063@mnit.ac.in" },
     ]
 
   const TeamMember = ({ member, delay }) => (
