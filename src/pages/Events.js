@@ -62,7 +62,7 @@ const Events = () => {
     description:"The day began with a vibrant procession of Lord Ganesha from Prabha Marg Circle to the Open Air Theatre, filled with dhol-tasha beats, chants of “Ganpati Bappa Morya!”, and energetic student participation. At OAT, celebrations included a dance performance by Level X, Maha Puja and installation, soulful aarti with prasad, and an evening aarti with large student gatherings. With overwhelming participation from students and faculty, the event became a festival of unity, devotion, and cultural harmony, concluding with heartfelt chants as MNIT Jaipur bid farewell to Bappa."
    ,
       impact: "500+ students attended , 100+ faculty members , Director Sir and Deans graced the event", 
-  image: "/events/Ganesh_Chaturthi.jpg"
+  image: "/events/Ganesh_Chaturthi.JPG"
   },
     {
       id: 2,
