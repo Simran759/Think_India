@@ -18,40 +18,40 @@ const Events = () => {
     return () => clearInterval(interval);
   }, [slideshowImages.length]);
   const upcomingEvents = [
-        {
-      id: 1,
-      title: "Choti Diwali – Donation Drive",
-      date: "October 2025",
-      time: "9:00 AM - 6:00 PM",
-      location: "College Main Gate, OAT, Hostel Lobbies",
-      description: "A meaningful initiative to collect clothes, books, food items, and stationery, spreading light and hope beyond campus walls.",
-      participants: "200+",
-  image: "/events/Donation_drive.jpg"
-    },
+  //       {
+  //     id: 1,
+  //     title: "Choti Diwali – Donation Drive",
+  //     date: "October 2025",
+  //     time: "9:00 AM - 6:00 PM",
+  //     location: "College Main Gate, OAT, Hostel Lobbies",
+  //     description: "A meaningful initiative to collect clothes, books, food items, and stationery, spreading light and hope beyond campus walls.",
+  //     participants: "200+",
+  // image: "/events/Donation_drive.jpg"
+  //   },
   
 
 
-    {
-      id: 2,
-      title: " Badi Diwali – Ethnic Dress Competition",
-      date: "October 2025",
-      time: "7:30 PM – 9:30 PM",
-      location: "OAT Main Stage",
-      description: "A cultural walk celebrating India’s diversity through traditional attire. Judged on creativity, cultural authenticity, confidence, and presentation.",
-      participants: "50",
-  image: "/events/ethinc_wear.jpg"
-    },
+  //   {
+  //     id: 2,
+  //     title: " Badi Diwali – Ethnic Dress Competition",
+  //     date: "October 2025",
+  //     time: "7:30 PM – 9:30 PM",
+  //     location: "OAT Main Stage",
+  //     description: "A cultural walk celebrating India’s diversity through traditional attire. Judged on creativity, cultural authenticity, confidence, and presentation.",
+  //     participants: "50",
+  // image: "/events/ethinc_wear.jpg"
+  //   },
   
-    {
-      id: 3,
-      title: " November Technical Workshop",
-      date: "1–6 November 2025",
-      time: "10:00 AM - 8:00 PM",
-      location: "VLTC Classrooms",
-      description: "A knowledge-driven workshop featuring expert speakers on cutting-edge topics like Web Development, AI, and Machine Learning. Students gain practical, real-world insights.",
-      participants: "75+",
-  image: "/events/technical.jpeg"
-    }
+  //   {
+  //     id: 3,
+  //     title: " November Technical Workshop",
+  //     date: "1–6 November 2025",
+  //     time: "10:00 AM - 8:00 PM",
+  //     location: "VLTC Classrooms",
+  //     description: "A knowledge-driven workshop featuring expert speakers on cutting-edge topics like Web Development, AI, and Machine Learning. Students gain practical, real-world insights.",
+  //     participants: "75+",
+  // image: "/events/technical.jpeg"
+  //   }
   ];
 
   const pastEvents = [
