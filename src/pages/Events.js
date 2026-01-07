@@ -64,8 +64,17 @@ const Events = () => {
       impact: "500+ students attended , 100+ faculty members , Director Sir and Deans graced the event", 
   image: "/events/Ganesh_Chaturthi.JPG"
   },
+  {
+    id:2,
+    titlw:"Self-Defense Awareness & Training Workshop",
+    date:"19 November 2025",
+    location:"Deeksha Shabagar",
+    description:"The Self-Defense Awareness & Training Workshop was a significant initiative aimed at empowering students with essential life skills, personal safety awareness, and confidence-building techniques. The workshop combined expert-led guidance with practical demonstrations and hands-on training. Expert Trainers Rtn. Dr. Pallavi Singhvi (Chairperson, Rotary Self Defense Academy) , Shihan Hemant Kumar (Chief Instructor & Technical Director, 5th Dan Black Belt) Joined us for teaching about the defense.",
+    impact:"Expert Trainers , 100+Student Joined",
+    image:"/events/defence.png"
+  },
     {
-      id: 2,
+      id: 3,
       title: " Discover India – The Puzzle Hunt",
       date: " February 7, 2025 ",
       location: "VLTC L-008, MNIT Jaipur ",
@@ -74,7 +83,7 @@ const Events = () => {
   image: "/events/discoverhunt.png"
     },
      {
-      id: 3,
+      id: 4,
       title: " Tug of War ",
       date: "January 12, 2025",
       location: "University Grounds",
@@ -83,7 +92,7 @@ const Events = () => {
       image: "/events/Tug_of_war.png"
     },
     {
-      id: 4,
+      id: 5,
       title: "Satoliya - Reliving Childhood Games ",
       date: "January 12, 2025",
       location: "University Grounds",
@@ -92,7 +101,7 @@ const Events = () => {
   image: "/events/satoliya.png"
     },
     
-  { id: 5, 
+  { id: 6, 
     title: "Ace Your Career in Civil Services – A Power-Packed UPSC Seminar", 
     date: "April 8, 2025 ", 
     location: "APJ Abdul Kalam Hall, VLTC, MNIT Jaipur ", 
