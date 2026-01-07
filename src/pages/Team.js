@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import LightRays from '../components/Backgrounds/LightRays/LightRays';
 import ProfileCard from '../components/Components/ProfileCard/ProfileCard';
+import Navbar from '../components/Navbar';
 import './Team.css';
 
 
@@ -62,8 +63,9 @@ const Team = () => {
 
   return (
     <div className="w-full min-h-screen relative flex flex-col items-center"
+    
       style={{ background: 'radial-gradient(circle at top, #0a0a1f)', paddingTop: '90px' }}>
-      
+      <Navbar/>
       {/* Spotlight LightRays Background */}
       <div style={{ position: 'fixed', inset: 0, width: '100vw', height: '100vh', zIndex: 0, pointerEvents: 'none' }}>
         <LightRays

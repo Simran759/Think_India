@@ -1,14 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaLightbulb, FaTrophy } from 'react-icons/fa';
+import Navbar from '../components/Navbar';
 import './Home.css';
 
 const Home = () => {
 
 
   return (
+    
   <div className="home"  style={{ background: 'linear-gradient(135deg, #0a0a1f 60%, #232a36 100%)', color: '#fff', minHeight: '100vh' }}>
       {/* Welcome Section */}
+       <Navbar />
       <section className="hero">
         <div className="hero-background">
           <div className="hero-overlay"></div>

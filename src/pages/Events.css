@@ -1,4 +1,7 @@
 /* Events Hero Section */
+*{
+  /* background-color: white; */
+}
 .events-hero {
   background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
   padding: 120px 0 80px;
@@ -155,3 +158,44 @@
   
   
 } 
+.coming-soon-wrapper {
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coming-soon-card {
+  background: linear-gradient(180deg, #43438e, #222234);
+  border: 1px solid rgba(251, 192, 45, 0.25);
+  border-radius: 24px;
+  padding: 60px 50px;
+  max-width: 520px;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(45, 25, 3, 0.45);
+}
+
+.coming-soon-card h2 {
+  color: #fbc02d;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.coming-soon-card p {
+  color: #cfd3ff;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.soon-badge {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  background: rgba(251, 192, 45, 0.15);
+  color: #fbc02d;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}

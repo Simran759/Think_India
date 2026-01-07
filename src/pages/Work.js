@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaHandshake, FaTrophy, FaChartLine } from 'react-icons/fa';
+import Navbar from '../components/Navbar';
 import './Work.css';
 
 const Work = () => {
@@ -19,6 +20,7 @@ const Work = () => {
     }, [slideshowImages.length]);
   return (
    <div className="events-page" style={{ background: 'linear-gradient(135deg, #0a0a1f  )', color: '#fff', minHeight: '100vh' }}>
+    <Navbar/>
       {/* Hero Section */}
   <section style={{ position: "relative", width: "100%", height: "730px", overflow: "hidden" }}>
     {/* Slide background */}
@@ -73,10 +75,10 @@ const Work = () => {
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8 }}
   style={{
-    fontSize: window.innerWidth <= 500 ? "3rem" : "4rem", // ✅ smaller size on phones
+    fontSize: window.innerWidth <= 500 ? "3rem" : "4rem", //
     fontWeight: 600,
     marginBottom: 19,
-    whiteSpace: "nowrap", // ✅ keep in one line
+    whiteSpace: "nowrap", //
   }}
 >
   Our Work

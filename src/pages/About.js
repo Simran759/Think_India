@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaLightbulb, FaTrophy, FaHandshake, FaUsers, FaChartLine, FaHeart } from 'react-icons/fa';
 import './About.css';
-
+import Navbar from '../components/Navbar';
 const About = () => {
    const slideshowImages = [
       '/photos/iit_kanpur_workshop.png',
@@ -18,7 +18,7 @@ const About = () => {
     }, [slideshowImages.length]);
   return (
   <div className="about-page" style={{ backgroundColor: '#0a0a1f', color: '#fff', minHeight: '100vh' }}>
-
+    <Navbar/>
       {/* Hero Section */}
   <section style={{ position: "relative", width: "100%", height: "730px", overflow: "hidden" }}>
     {/* Slide background */}

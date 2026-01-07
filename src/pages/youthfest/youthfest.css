@@ -1,0 +1,110 @@
+.section {
+  padding: 80px 24px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section-text {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: #d0d4ff;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.youthfest-points {
+  max-width: 800px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.youthfest-points li {
+  font-size: 1.05rem;
+  color: #e0e3ff;
+  margin-bottom: 14px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.youthfest-points li::before {
+  content: "•";
+  color: #fbc02d;
+  position: absolute;
+  left: 0;
+}
+
+.youthfest-nav-cta button {
+  background: transparent;
+  border: 1px solid #fbc02d;
+  color: #fbc02d;
+  padding: 10px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.youthfest-nav-cta button:hover {
+  background: #fbc02d;
+  color: #0a0a1f;
+}
+.white-bg {
+  background: #ffffff;
+}
+
+.youthfest-info {
+  padding: 90px 24px;
+}
+
+.youthfest-info .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #f5b800; /* premium gold */
+  margin-bottom: 24px;
+}
+
+.info-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #2b2f3a;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  max-width: 820px;
+  margin: 30px auto 0;
+  text-align: left;
+}
+
+.info-list li {
+  font-size: 1.05rem;
+  color: #2f3445;
+  padding-left: 28px;
+  margin-bottom: 16px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.info-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #1b1b1a;
+  font-size: 1.6rem;
+  line-height: 1;
+}
