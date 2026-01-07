@@ -26,15 +26,15 @@ const Team = () => {
      { id: "2023UCP1671", name: "Ashika", position: "Co-Convenor", image: "/team_member_pic/Ashika.jpg", linkedinUrl: "https://www.linkedin.com/in/ashika-janothariya-140613293/",  instagramUrl:"https://www.instagram.com/shika_502/",email:"2023ucp1671@mnit.ac.in" },
   { id: "2023UME1921", name: "Ayush Kumar Gupta", position: "Co-Convenor and Gen Sec", image: "/team_member_pic/Ayush gupta.jpg", linkedinUrl: "https://www.linkedin.com/in/ayush-gupta808/",  instagramUrl:"https://www.instagram.com/guptayush232/",email:"2023ume1921@mnit.ac.in" },
   { id: "2023UCH1869", name: "Gopal Agarwal", position: "Convenor", image: "/team_member_pic/Gopal Agarwal.jpg", linkedinUrl: "https://www.linkedin.com/in/gopal-agarwal-bb591b2ba/",  instagramUrl:"https://www.instagram.com/gopal_.agarwal/",email:"2023uch1869@mnit.ac.in" },
-  //  { id: "2023UEC1176", name: "Manya Bajaj", position: "Content Writing", image: "/team_member_pic/MANYA BAJAJ.jpeg",  linkedinUrl:"https://linkedin.com/in/bajaj-manya2003",  instagramUrl:"https://www.instagram.com/manya.bajaj_/",email:"2023uec1176@mnit.ac.in" },
+  
  { id: "2023UME1777", name: "Kamini Tomar", position: "Social-Media Head and Joint Sec.(Finance+Marketing)", image: "/team_member_pic/KAMINI TOMAR.jpg",  linkedinUrl:"https://www.linkedin.com/in/kamini-tomar/",  instagramUrl:"https://www.instagram.com/kamini_1239/",email:"2023ume1777@mnit.ac.in" },
   { id: "2023UCH1839", name: "Shreya Sawant", position: "President and Joint Sec.(Logistic+Decor+Cultural)", image: "/team_member_pic/shreya sawant.jpg",  linkedinUrl:"https://www.linkedin.com/in/shreya-sawant-11a936283/",  instagramUrl:"https://www.instagram.com/sheeshh_shreya/",email:"2023uch1839@mnit.ac.in" },
       { id: "2023UME1770", name: "Dhanush", position: "Vice-President", image: "/team_member_pic/Dhanush.JPG",  linkedinUrl:"https://www.linkedin.com/in/dhanush-chandra-79332a33b/",  instagramUrl:"https://www.instagram.com/dhanushchandra2006/",email:"2023ume1770@mnit.ac.in" },
     { id: "2023UME1778", name: "Shubh Patel", position: "Joint Sec(Technical+Media)", image: "/team_member_pic/SHUBH PATEL.jpg",  linkedinUrl: "https://www.linkedin.com/in/shubh-patel-656858367/",  instagramUrl:"https://www.instagram.com/shubhpatel5445/" ,email:"2023ume1778@mnit.ac.in" },
         { id: "2023UCH1395", name: "Shreya Meena", position: "Social-Media Head", image: "/team_member_pic/Rabita Meena.jpg",  linkedinUrl:"https://www.linkedin.com/in/shreya-meena-385287377/",  instagramUrl:"https://www.instagram.com/the_life_of_enterpreneur/",email:"2023uch1395@mnit.ac.in" },
-      // { id: "2023UCH1265", name: "Vedant Sharma", position: "Editing", image: "/team_member_pic/Vedant Sharma.jpg",  linkedinUrl:"https://www.linkedin.com/in/vedant-sharma444/",  instagramUrl:"https://www.instagram.com/vedant_sharma444?igsh=aHV1djRqYTd6NXEz",email:"2023uch1265@mnit.ac.in" },
+     
       { id: "2023UMT1948", name: "Samrat Rai", position: "Vice-President", image: "/team_member_pic/SAMRAT RAI.jpg",  linkedinUrl:"https://www.linkedin.com/in/samrat-rai-2407b22b1/",  instagramUrl:"https://www.instagram.com/dhanushchandra2006/",email:"2023umt1948@mnit.ac.in" },
-          //  { id: "2023UCE1063", name: "Aastha Priyanshu", position: "Decor", image: "/team_member_pic/Aastha.jpg",  linkedinUrl:"https://www.linkedin.com/in/aastha-priyanshu-57a3022b4/",  instagramUrl:"https://www.instagram.com/",email:"2023uce1063@mnit.ac.in" },
+
     ]
 
   const TeamMember = ({ member, delay }) => (
