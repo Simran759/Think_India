@@ -17,7 +17,6 @@ const Team = () => {
     { id: "2022UCH1187", name: "Kunal Agarwal", position: "Advisor", image: "/team_member_pic/kunal.jpg",  linkedinUrl: "https://www.linkedin.com/in/kunal-agrawal-a082b5227/" ,  instagramUrl:"https://www.instagram.com/kunalagarwal2016/",email:"2022uch1187@mnit.ac.in"},
     { id: "2022UMT1408", name: "Jasani Happy Vinodkumar", position: "Advisor", image: "/team_member_pic/JASANI HAPPY VINODKUMAR.jpeg",  linkedinUrl: "https://www.linkedin.com/in/happy-jasani-73aa07246",  instagramUrl:"https://www.instagram.com/happy_jasani/" ,email:"2022umt1408@mnit.ac.in" },
      { id: "2022UCE1177", name: "Smith shah", position: "Advisor", image: "/team_member_pic/Smith shah.jpg", linkedinUrl: "https://www.linkedin.com/in/smith-shah-b9a648256/",  instagramUrl:"https://www.instagram.com/smithshah_/",email:"2022uce1177@mnit.ac.in" },
-          // { id: "2022UCE1463", name: "Dharamveer nitharwal ", position: "Advisor", image: "/team_member_pic/Dharamveer Nitharwal.jpg", linkedinUrl: "https://www.linkedin.com/in/dharamveer-nitharwal-6155a6258/",  instagramUrl:"https://www.instagram.com/dharamveer_nitharwal/",email:"2022uce1463@mnit.ac.in" },
 
   ];
 
