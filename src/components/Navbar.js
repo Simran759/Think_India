@@ -67,7 +67,7 @@ const Navbar = () => {
               outline: '2px solid #fff',
               outlineOffset: '-2px'
             }}>
-              <img src="/logoti.jpg" alt="Think India Logo" style={{ height: '40px', width: '40px', objectFit: 'cover', borderRadius: '50%', background: '#fff' }} />
+              <img src="/logoti.webp" alt="Think India Logo" style={{ height: '40px', width: '40px', objectFit: 'cover', borderRadius: '50%', background: '#fff' }} />
             </span>
             <span className="logo-text">Think India</span>
             {/* <div className="logo-accent"></div> */}

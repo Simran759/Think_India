@@ -5,9 +5,9 @@ import './About.css';
 import Navbar from '../components/Navbar';
 const About = () => {
    const slideshowImages = [
-      '/photos/iit_kanpur_workshop.png',
+      '/photos/iit_kanpur_workshop.webp',
       // '/photos/roorkee.jpg',
-      '/photos/convention.jpg',
+      '/photos/convention.webp',
     ];
     const [slideIndex, setSlideIndex] = React.useState(0);
     React.useEffect(() => {

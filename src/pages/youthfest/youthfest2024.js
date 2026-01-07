@@ -7,9 +7,9 @@ import Navbar  from "../../components/youthfestNavbar";
 const Youthfest = () => {
   // Slideshow images for all pages except Team and Contact
   const slideshowImages = [
-    '/highlights/anchoring.jpg',
-    '/highlights/drama.jpg',
-    '/highlights/youthfest_team.jpg',
+    '/highlights/anchoring.webp',
+    '/highlights/drama.webp',
+    '/highlights/youthfest_team.webp',
   ];
   
 
@@ -28,7 +28,7 @@ const Youthfest = () => {
     description:"Dedicated to the youth icon Swami Vivekananda, this day inspired students to reflect on leadership and service. Faculty and guest speakers shared insights on Vivekananda’s vision.Skits, patriotic songs, and poetry highlighted his teachings.Students expressed how his ideals motivate them in academics, spirituality, and social service.This day reinforced the message of self-belief and responsibility among students."
    ,
       impact: "250+ students attended ", 
-  image: "/highlights/swami_vivekananad.jpg"
+  image: "/highlights/swami_vivekananad.webp"
   },
     {
       id: 2,
@@ -37,7 +37,7 @@ const Youthfest = () => {
       location: "VLTC Back Porch",
       description: "Lohri Night ,The festival began with the warmth of Lohri, celebrated with a traditional bonfire. Students circled around the flames, singing Punjabi folk songs, performing bhangra, and enjoying festive delicacies like popcorn, peanuts, and gajak. Lohri night symbolized unity and gratitude for prosperity and new beginnings."
       ,impact: "100+ people attended ",
-  image: "/highlights/lohri.jpg"
+  image: "/highlights/lohri.webp"
     },
      {
       id: 3,
@@ -46,7 +46,7 @@ const Youthfest = () => {
       location: "OAT",
       description: "The skies above MNIT Jaipur filled with colourful kites as students celebrated Makar Sankranti with joy. Kite-flying competitions created a lively spirit of friendly rivalry, while traditional sweets like til-gud laddoos added festive flavour. The day captured the cultural essence of renewal, positivity, and celebration."
   , impact: "70+ teams participated",
-      image: "/highlights/kite.jpg"
+      image: "/highlights/kite.webp"
     },
     {
       id: 4,
@@ -55,7 +55,7 @@ const Youthfest = () => {
       location: "University Grounds",
       description: "The final day brought back the charm of childhood games like Satoliya, Kho-Kho, Tug of War, and Sack Races. Students laughed, competed, and bonded, rediscovering simple joys and teamwork. The closing ceremony featured cultural performances, where music, dance, and theatre created an atmosphere of celebration and togetherness.",
       impact: "500+ students participated",
-  image: "/events/satoliya.png"
+  image: "/events/satoliya.webp"
     },
     
  

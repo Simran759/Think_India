@@ -7,9 +7,9 @@ import './Work.css';
 const Work = () => {
   // Slideshow images for all pages except Team and Contact
   const slideshowImages = [
-      '/photos/iit_roorkee.jpg',
-      '/photos/team_iit_roorkee.jpg',
-      '/events/discoverhunt.png',
+      '/photos/iit_roorkee.webp',
+      '/photos/team_iit_roorkee.webp',
+      '/events/discoverhunt.webp',
     ];
     const [slideIndex, setSlideIndex] = React.useState(0);
     React.useEffect(() => {

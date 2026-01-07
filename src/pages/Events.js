@@ -6,9 +6,9 @@ import Navbar from '../components/Navbar';
 const Events = () => {
   // Slideshow images for Our Events
   const slideshowImages = [
-    '/photos/hcverma.jpg',
-    '/events/satoliya.png',
-    '/events/discoverhunt.png',
+    '/photos/hcverma.webp',
+    '/events/satoliya.webp',
+    '/events/discoverhunt.webp',
   ];
   const [slideIndex, setSlideIndex] = React.useState(0);
   React.useEffect(() => {
@@ -26,7 +26,7 @@ const Events = () => {
       location: "College Main Gate, OAT, Hostel Lobbies",
       description: "A meaningful initiative to collect clothes, books, food items, and stationery, spreading light and hope beyond campus walls.",
       participants: "200+",
-  image: "/events/Donation_drive.jpg"
+  image: "/events/Donation_drive.webp"
     },
   
 
@@ -39,7 +39,7 @@ const Events = () => {
   //     location: "OAT Main Stage",
   //     description: "A cultural walk celebrating India’s diversity through traditional attire. Judged on creativity, cultural authenticity, confidence, and presentation.",
   //     participants: "50",
-  // image: "/events/ethinc_wear.jpg"
+  // image: "/events/ethinc_wear.webp"
   //   },
   
     {
@@ -50,7 +50,7 @@ const Events = () => {
       location: "VLTC Classrooms",
       description: "A knowledge-driven workshop featuring expert speakers on cutting-edge topics like Web Development, AI, and Machine Learning. Students gain practical, real-world insights.",
       participants: "75+",
-  image: "/events/technical.jpeg"
+  image: "/events/technical.webp"
     }
   ];
 
@@ -62,7 +62,7 @@ const Events = () => {
     description:"The day began with a vibrant procession of Lord Ganesha from Prabha Marg Circle to the Open Air Theatre, filled with dhol-tasha beats, chants of “Ganpati Bappa Morya!”, and energetic student participation. At OAT, celebrations included a dance performance by Level X, Maha Puja and installation, soulful aarti with prasad, and an evening aarti with large student gatherings. With overwhelming participation from students and faculty, the event became a festival of unity, devotion, and cultural harmony, concluding with heartfelt chants as MNIT Jaipur bid farewell to Bappa."
    ,
       impact: "500+ students attended , 100+ faculty members , Director Sir and Deans graced the event", 
-  image: "/events/Ganesh_Chaturthi.JPG"
+  image: "/events/Ganesh_Chaturthi.webp"
   },
   {
     id:2,
@@ -71,7 +71,7 @@ const Events = () => {
     location:"Deeksha Shabagar",
     description:"The Self-Defense Awareness & Training Workshop was a significant initiative aimed at empowering students with essential life skills, personal safety awareness, and confidence-building techniques. The workshop combined expert-led guidance with practical demonstrations and hands-on training. Expert Trainers Rtn. Dr. Pallavi Singhvi (Chairperson, Rotary Self Defense Academy) , Shihan Hemant Kumar (Chief Instructor & Technical Director, 5th Dan Black Belt) Joined us for teaching about the defense.",
     impact:"Expert Trainers , 100+Student Joined",
-    image:"/events/defence.png"
+    image:"/events/defence.webp"
   },
     {
       id: 3,
@@ -80,7 +80,7 @@ const Events = () => {
       location: "VLTC L-008, MNIT Jaipur ",
       description: "As part of the Blitz events, Think India MNIT organized an exciting puzzle-based treasure hunt, where teams raced to solve riddles, collect pieces, and complete the map of India. The event brilliantly combined logical reasoning, speed, and cultural awareness in a lively competitive spirit.Participants showcased their problem-solving skills while engaging in an intense yet fun-filled race across departments. The creative format and energetic atmosphere made the event a memorable experience, receiving immense appreciation from all."
       ,impact: "250+ people participated ",
-  image: "/events/discoverhunt.png"
+  image: "/events/discoverhunt.webp"
     },
      {
       id: 4,
@@ -89,7 +89,7 @@ const Events = () => {
       location: "University Grounds",
       description: "The Tug of War event at Youth Fest 2025 witnessed an electrifying atmosphere as 18 teams battled it out in high-energy knockout rounds. The roaring crowds amplified the thrill of each match, making the competition even more intense. The final showdown between Purwanchal ke Sher and Danav kept everyone on the edge of their seats, with Purwanchal ke Sher emerging as the ultimate champions."
   , impact: "15+ teams participated",
-      image: "/events/Tug_of_war.png"
+      image: "/events/Tug_of_war.webp"
     },
     {
       id: 5,
@@ -98,7 +98,7 @@ const Events = () => {
       location: "University Grounds",
       description: "Satoliya 2025 brought back the charm of the traditional game Seven Stones. With 15+ teams battling it out through rounds, semis, and the grand finale, the event turned into a perfect mix of nostalgia and competition. Students from across departments showcased strategy, teamwork, and sportsmanship, making Satoliya one of the most fun and loved highlights of YouthFest 2024.",
       impact: "15+ teams participated",
-  image: "/events/satoliya.png"
+  image: "/events/satoliya.webp"
     },
     
   { id: 6, 
@@ -108,7 +108,7 @@ const Events = () => {
  description: "Think India MNIT organized an impactful seminar featuring Mr. Sunil Oberoi (Ex-IAS, Former UPSC Examiner) and Mr. Kapil Jain (Vajiram & Ravi IAS), bringing invaluable guidance to aspiring civil servants. The session provided insider insights and mentorship for UPSC preparation.At the seminar, the speakers shared inspiring journeys, highlighted effective preparation methods, and engaged in an interactive Q&A session. The event also created meaningful networking opportunities for aspirants.With the hall brimming with enthusiastic participants, the seminar emerged as a resounding success, leaving students motivated and better equipped to pursue their UPSC dreams.",
 
     impact: "250+ students benefited", 
-  image: "/events/civilservices.jpg.png" },
+  image: "/events/civilservices.jpg.webp" },
 
     
   ];

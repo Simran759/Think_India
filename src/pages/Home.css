@@ -70,7 +70,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('/public/vltc.jpeg') center center/cover no-repeat;
+  background: url('/public/vltc.webp') center center/cover no-repeat;
   z-index: 0;
 }
 
