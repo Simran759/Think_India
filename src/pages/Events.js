@@ -18,16 +18,16 @@ const Events = () => {
     return () => clearInterval(interval);
   }, [slideshowImages.length]);
   const upcomingEvents = [
-  //       {
-  //     id: 1,
-  //     title: "Choti Diwali – Donation Drive",
-  //     date: "October 2025",
-  //     time: "9:00 AM - 6:00 PM",
-  //     location: "College Main Gate, OAT, Hostel Lobbies",
-  //     description: "A meaningful initiative to collect clothes, books, food items, and stationery, spreading light and hope beyond campus walls.",
-  //     participants: "200+",
-  // image: "/events/Donation_drive.jpg"
-  //   },
+        {
+      id: 1,
+      title: "Holi Donation Drive",
+      date: "March 2025",
+      time: "9:00 AM - 6:00 PM",
+      location: "College Main Gate, OAT, Hostel Lobbies",
+      description: "A meaningful initiative to collect clothes, books, food items, and stationery, spreading light and hope beyond campus walls.",
+      participants: "200+",
+  image: "/events/Donation_drive.jpg"
+    },
   
 
 
@@ -42,16 +42,16 @@ const Events = () => {
   // image: "/events/ethinc_wear.jpg"
   //   },
   
-  //   {
-  //     id: 3,
-  //     title: " November Technical Workshop",
-  //     date: "1–6 November 2025",
-  //     time: "10:00 AM - 8:00 PM",
-  //     location: "VLTC Classrooms",
-  //     description: "A knowledge-driven workshop featuring expert speakers on cutting-edge topics like Web Development, AI, and Machine Learning. Students gain practical, real-world insights.",
-  //     participants: "75+",
-  // image: "/events/technical.jpeg"
-  //   }
+    {
+      id: 2,
+      title: " November Technical Workshop",
+      date: "March 2026",
+      time: "10:00 AM - 8:00 PM",
+      location: "VLTC Classrooms",
+      description: "A knowledge-driven workshop featuring expert speakers on cutting-edge topics like Web Development, AI, and Machine Learning. Students gain practical, real-world insights.",
+      participants: "75+",
+  image: "/events/technical.jpeg"
+    }
   ];
 
   const pastEvents = [
@@ -169,10 +169,10 @@ const Events = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       style={{
-        fontSize: window.innerWidth <= 500 ? "3rem" : "4rem", // ✅ smaller size on phones
+        fontSize: window.innerWidth <= 500 ? "3rem" : "4rem", 
         fontWeight: 600,
         marginBottom: 19,
-        whiteSpace: "nowrap", // ✅ keep in one line
+        whiteSpace: "nowrap",
       }}
     >
       Our Events
@@ -206,13 +206,13 @@ const Events = () => {
             style={{
               width: 14,
               height: 14,
-              borderRadius: "50%", // <-- Make dot a circle
+              borderRadius: "50%", 
               background: idx === slideIndex ? "#fbc02d" : "#fff",
               opacity: idx === slideIndex ? 1 : 0.5,
               border: idx === slideIndex ? "2px solid #fff" : "2px solid #fbc02d",
               transition: "all 0.3s",
-              display: "inline-block", // Ensure it's inline-block
-              margin: "0 0px", // Optional: add spacing between dots
+              display: "inline-block", 
+              margin: "0 0px", 
             }}
       />
     ))}
