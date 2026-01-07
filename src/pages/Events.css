@@ -199,3 +199,28 @@
   font-weight: 600;
   letter-spacing: 1px;
 }
+/* Default (desktop & tablet) already looks good */
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .coming-soon-wrapper {
+    min-height: 45vh;
+    padding: 0 16px;
+  }
+
+  .coming-soon-card {
+    padding: 36px 24px;
+    border-radius: 18px;
+    max-width: 100%;
+  }
+
+  .coming-soon-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .coming-soon-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
